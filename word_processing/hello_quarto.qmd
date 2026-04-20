@@ -1,0 +1,62 @@
+---
+title: "Quarto Basics"
+format:
+  html:
+    code-fold: true
+jupyter: python3
+---
+
+# Header 1
+
+Some writing here... Lorem ipsum dolor sit amet, consectetur adipiscing elit...
+
+For markdown basics see: [Markdown Basics](https://quarto.org/docs/authoring/markdown-basics.html). 
+
+Paste some of the example code in that page into this file and render after each paste, play around with it. 
+
+## Code blocks:
+
+The result of `1+1` is:
+
+```{python}
+print(1+1)
+# Comments look like this in the Python code blocks
+```
+
+## Inline code: 
+
+The result of `1+1` is `{python} 1+1`
+
+Even better - set the variable in a code block and call the variable inline. You don't really want any code inline, just variables:
+
+```{python}
+#| echo: False
+# Define 1+1
+one_plus_one = 1+1
+```
+
+The result of `1+1` is `{python} one_plus_one`
+
+We don't want to include the code block above in the final render, so we used the line
+ `#| echo: False` 
+ to suppress it. 
+
+There are lots of tricks and options with code blocks and inline code, including sourcing external code scripts, but for now in this file we'll stick to absolute basics. (See [Execution options](https://quarto.org/docs/computations/execution-options.html]))
+
+**Tips and notes**:
+
+- How to comment (shortcut = ctrl + /)
+
+<!-- Comments look like this in the markdown/html parts -->
+`<!-- Comments look like this in the markdown/html parts -->`
+
+- Source: https://quarto.org/docs/get-started/hello/vscode.html
+
+- To render and preview, do one of:
+  - execute the `quarto preview <filename>` or `quarto render <filename>` command in the terminal. 
+  - use the Ctrl+Shift+K keyboard shortcut, 
+  - Preview button (Preview icon) at the top right of the editor
+
+- Render/preview often in case there are any errors. It's easier to fix errors one-by-one rather than writing a huge amount and then having to go through lots of different errors. 
+
+- Further notes: [Python4DS](https://aeturrell.github.io/python4DS/quarto.html)

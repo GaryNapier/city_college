@@ -1,0 +1,53 @@
+---
+title: "Referencing in Quarto"
+format: docx
+jupyter: python3
+bibliography: AI_refs.bib
+csl: harvard-cite-them-right.csl
+---
+
+# Referencing in Quarto 
+
+[Referencing in Quarto documentation](https://quarto.org/docs/authoring/citations.html)
+
+## Setup
+
+First of all, make sure you have a **citation key** in Zotero for each refernce you want to use. 
+
+This is a tag that Quarto will use to uniquely refer to that refernce in the Markdown code. 
+
+This is pretty much the only manual step you have to do (apart from adding and checking the reference in Zotero), but once it's done it's done. 
+
+In Zotero, click on the reference you want, then on the right hand side scroll down to the **Citation Key** field. 
+
+Fill this in with a sensible, unique name. Usually surname and year, no spaces. If an author has more than one paper in a year, then do something like "Smith2007a" and "Smith2007b" in each respective Citation Key.
+
+![Citation key field](screenshots/citation_key.png)
+
+
+## Books
+
+“Machine-generated automation can be traced to the renaissance (Lawrence, 2024)..."
+
+“Machine-generated automation can be traced to the renaissance (Lawrence, 2024)..."
+
+"Machine-generated automation can be traced to the renaissance (Lawrence, 2024, p. 8)..."
+
+"According to Lawrence (2024, p. 8), machine-generated automation can be traced to the renaissance…"
+
+
+
+## Journal articles
+
+"@Turing1950 says that..."
+
+OR
+
+"Turing [-@Turing1950] says that..."
+
+"According to @Turing1950..."
+
+"The Turing test [@Turing1950] posits that a machine can..."
+
+# References
+
