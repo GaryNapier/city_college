@@ -1,0 +1,15 @@
+tiny_python_projects/
+admin/
+books/
+rsconnect/
+*_ipynb_*
+*.bib
+*.csl
+hello_quarto_files/
+referencing_in_quarto_files/
+*.docx
+*.html
+*.Rproj
+*.DS_Store
+.Rhistory
+dice_rolls/.gitignore
