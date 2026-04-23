@@ -1,0 +1,83 @@
+---
+title: "Test Reveal JS"
+author: "Gary Napier"
+format:
+  revealjs:
+    smaller: true
+    logo: ccn_logo.jpg
+    footer: "Access to Computing"
+    embed-resources: true
+---
+
+# In the morning
+
+## Getting up
+
+- Turn off alarm
+- Get out of bed
+
+## Breakfast
+
+- Eat eggs
+- Drink coffee
+
+# In the evening
+
+## Dinner
+
+- Eat spaghetti
+- Drink wine
+
+## Going to sleep
+
+- Get in bed
+- Count sheep
+
+::: {.incremental}
+## Incremental test
+- Eat spaghetti
+- Drink wine
+:::
+
+:::: {.columns}
+::: {.column width="50%"}
+Left column
+:::
+
+::: {.column width="60%"}
+Right column
+:::
+::::
+
+## Slide Title
+
+Slide content
+
+::: aside
+Some additional commentary of more peripheral interest.
+:::
+
+## Slide Title
+
+- Green ^[A footnote]
+- Brown
+- Purple
+
+::: aside
+Some additional commentary of more peripheral interest.
+:::
+
+## No footer {footer=false}
+
+No footer is shown on this slide
+
+## Slide Title
+
+Slide content
+
+::: footer
+Custom footer text
+:::
+
+
+
