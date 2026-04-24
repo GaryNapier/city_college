@@ -1,0 +1,174 @@
+---
+title: "Setup and organisation"
+author: "Gary Napier gary.napier@ccn.ac.uk"
+format:
+  revealjs:
+    smaller: true
+    logo: ccn_logo.jpg
+    footer: "Access to Computing - setup and organisation"
+    embed-resources: true
+---
+
+## Learning outcomes / overview
+
+- Why organisation is important, especially in computing
+- Projects as the "unit" of organisation
+- Folder structure
+- Versions
+- Working on different machines
+- Reproducibility
+
+# Why organisation is important
+
+## Why organisation is important
+
+- "Organisation is key to productivity"
+- You don't want to get into a mess with trying to find files
+- If you do find the "right" file, which version is correct?
+- Do everything for "future you"
+
+# Projects as the "unit" of organisation
+
+## Projects as the "unit" of organisation
+
+- You need a "one folder, one project" mental model
+- The folder should be a coherent body of work where everything related to that *project* sits
+- Took me ages to realise this!
+
+## Projects as the "unit" of organisation
+
+- DON'T have folders that are for e.g. 
+  - Any and all types of scripts or files, e.g. a folder called `python_scripts`
+  - Work that's from a particular location or context (see my Github repo mistakes later)
+  
+## Projects as the "unit" of organisation
+
+- See Chapter 2 of ![Bioinformatics Data Skills](https://womengovtcollegevisakha.ac.in/departments/Bioinformatics%20Data%20Skills%20Reproducible%20and%20Robust%20Research%20with%20Open%20Source%20Tools%20by%20Vince%20Buffalo.pdf)
+
+> "Creating a well-organized directory structure is the foundation of a reproducible bioinformatics project" - Vince Buffalo (p.21)
+
+- The "one folder per project" model is not just for your own organisation
+- It helps with programming as it allows you to...
+  - automate data processing/computational tasks much easier
+  - package up your project and its environment to make into software or make reproducible
+
+## Projects as the "unit" of organisation
+
+- So what should your project directories look like?
+- Something like this..
+
+```
+$ tree project_example/
+project_example/
+├── README.md
+├── cache
+│   └── README.md
+├── config
+│   ├── README.md
+│   └── global.dcf
+├── data
+│   └── <data files>
+│   └── README.md
+├── clean_and_wrangle
+│   ├── <scripts>
+│   └── README.md
+├── plots
+│   ├── <scripts>
+│   └── README.md
+└── analysis
+    ├── <scripts>
+    └── README.md
+```
+
+## Projects as the "unit" of organisation
+
+
+
+## Projects as the "unit" of organisation
+
+![My Github repos](https://github.com/GaryNapier?tab=repositories)
+
+- Let's look at some mistakes here!
+
+
+# Folder structure
+
+## Folder structure
+
+# Versions
+
+## File versions
+
+- Never, ever, EVER doing this.. Your `project` directory looks like this:
+`project_rough.doc`
+`project_final.doc`
+`project_final_edit.doc`
+`project_final_edit_1.doc`
+`project_FINAL.doc`
+`project_FINAL_1.doc`
+`project_FINAL_FINAL.doc`
+`project_FINAL_FINAL_HAND_IN.doc`
+`project_FINAL_FINAL_HAND_IN_THIS_REALLY_IS_MY_DEFINITIVE_FINAL_VERSION.doc`
+`project_2.doc`
+
+- I've done this so you don't have to. 
+
+## File versions
+
+- ONE file, ONE version
+  - Ok, you might have a separate file that is experimental with rough workings, but make this VERY clear in its name. 
+  - NO MORE THAN ONE rough/experimental version... PLEASE!
+  
+- How can I work on this ONE file if I'm at home one day and at CC the next... And back again?
+  - Next section - *Working on different machines*
+
+# Working on different machines
+
+## Working on different machines - problem
+
+- You start work on a file at City College.. e.g. `picnic_task.py`
+- That evening you need to work on THE SAME file (`picnic_task.py`) 
+  - (NOT a different version of the work in a different file e.g. `picnic_task_HOME_VERSION.py`)
+- How do you then access the same file (`picnic_task.py`) at home?
+
+## Working on different machines - solution
+
+- email it to yourself? - NO
+- memory stick? - NO
+
+- Cloud - YES
+- Github (or Bitbucket, etc) - YES
+
+# Reproducibility
+
+##
+
+# General tips
+
+## File names
+
+> "[Spaces aren't] appropriate in a Unix-based environment, because spaces are used to separate arguments in [Unix] commands." - Vince Buffalo (p.23)
+
+- DO NOT have spaces in your file names - this makes it really hard to process the file names as data 
+  - You have to wrap the filename in backticks ("`") and is a pain for you and for programming when you want to call file names. 
+- Use underscores or dashes
+  
+  - Bad - `my project/python scripts/data cleaning and wrangling.py`
+  - Good - `my_project/python_scripts/data_cleaning_and_wrangling.py`
+  - Good - `my-project/python-scripts/data-cleaning-and-wrangling.py`
+  
+- Get in the habit of this, naming every file you ever create as something informative and without spaces, even if the file seems unimportant
+
+## File names
+
+- Number ordered - especially if the scripts run in sequence
+  - Good - `my_project/python_scripts/01_data_cleaning_and_wrangling.py`
+- Dates
+  - Good - `my_project/python_scripts/01_data_cleaning_and_wrangling_20260403.py`
+- short but descriptive
+  - I'd rather use very long names and know what the file is than a short name and not know
+
+
+## Further reading and resources
+
+![Bioinformatics Data Skills](https://womengovtcollegevisakha.ac.in/departments/Bioinformatics%20Data%20Skills%20Reproducible%20and%20Robust%20Research%20with%20Open%20Source%20Tools%20by%20Vince%20Buffalo.pdf)
