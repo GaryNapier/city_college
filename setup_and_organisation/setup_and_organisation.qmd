@@ -13,7 +13,7 @@ format:
 
 - Why organisation is important, especially in computing
 - Projects as the "unit" of organisation
-- Folder structure
+- Directory structure
 - Versions
 - Working on different machines
 - Reproducibility
@@ -82,7 +82,67 @@ project_example/
 
 ## Projects as the "unit" of organisation
 
+- Each of these might have a subfolder, e.g. you might want to divide your `data` into `csv`, `fasta`, whatever's appropriate and keeps you organised. 
 
+```
+$ tree project_example/
+project_example/
+├── README.md
+├── cache
+│   └── README.md
+├── config
+│   ├── README.md
+│   └── global.dcf
+├── data
+│   └── <data files>
+│   └── README.md
+├── clean_and_wrangle
+│   ├── <scripts>
+│   └── README.md
+├── plots
+│   ├── <scripts>
+│   └── README.md
+└── analysis
+    ├── <scripts>
+    └── README.md
+```
+
+## Projects as the "unit" of organisation
+
+- Notice each folder has a README file. 
+- It's also super important to have good documentation in your projects
+  - For others
+  - **For "future you"**
+
+```
+$ tree project_example/
+project_example/
+├── README.md
+├── cache
+│   └── README.md
+├── config
+│   ├── README.md
+│   └── global.dcf
+├── data
+│   └── <data files>
+│   └── README.md
+├── clean_and_wrangle
+│   ├── <scripts>
+│   └── README.md
+├── plots
+│   ├── <scripts>
+│   └── README.md
+└── analysis
+    ├── <scripts>
+    └── README.md
+```
+
+## Projects as the "unit" of organisation
+
+- See also the R package site ![Project Template](projecttemplate.net)
+- Good example of software that automates project structure
+- Good "philosophy" of organisation
+- See the ![Architecture](http://projecttemplate.net/architecture.html) section for layouts and types of files commonly used in an analysis project
 
 ## Projects as the "unit" of organisation
 
@@ -90,10 +150,11 @@ project_example/
 
 - Let's look at some mistakes here!
 
+## Projects as the "unit" of organisation
 
-# Folder structure
-
-## Folder structure
+- Excellent example of project structure - ![Tiny Python Projects](https://github.com/kyclark/tiny_python_projects/tree/master)
+- Subfolders for each discrete task/sub-project
+- Named clearly and numbered sequentially
 
 # Versions
 
@@ -139,15 +200,59 @@ project_example/
 - Cloud - YES
 - Github (or Bitbucket, etc) - YES
 
+## Working on different machines - solution
+
+- Sub-lecture - ![Setup lecture after making LOTS of mistakes](https://docs.google.com/presentation/d/1IXz_5pn1aqkKsRSgdeXwmgHAVR5R6GR5Xe58IcrOJvw/edit?usp=sharing)
+
 # Reproducibility
 
-##
+## Reproducibility
+
+- This is most important for science, data analysis and things like that where you have pipelines
+- But still relevant to software development, or anything that packages things up into discrete units 
+
+## Reproducibility
+
+- You should be able to have a "master script" that runs all your other scripts and just works, first time on any machine
+- Your scripts should be able to take different data but with the same format (more rows for example), but process it in the same way
+- Same analysis, different results
+
+## Reproducibility
+
+- This means you have to think of ways when programming to represent variables or concepts flexibly
+- i.e. NO HARDCODING!
+
+## Reproducibility
+
+- NO HARDCODING!
+- Simple example - you need to calculate three months ago from today, every time the script is run. 
+
+- Pseudo code:
+
+- NO
+```
+three_mo_ago = "2026-04-24" - 3
+```
+
+- Yes
+```
+three_mo_ago = date_today() - 3
+```
+
+- Yes, better
+```
+todays_date = date_today()
+months_ago_from_today = 3
+three_mo_ago = todays_date - months_ago_from_today
+```
 
 # General tips
 
 ## File names
 
 > "[Spaces aren't] appropriate in a Unix-based environment, because spaces are used to separate arguments in [Unix] commands." - Vince Buffalo (p.23)
+
+## File names
 
 - DO NOT have spaces in your file names - this makes it really hard to process the file names as data 
   - You have to wrap the filename in backticks ("`") and is a pain for you and for programming when you want to call file names. 
@@ -172,3 +277,6 @@ project_example/
 ## Further reading and resources
 
 ![Bioinformatics Data Skills](https://womengovtcollegevisakha.ac.in/departments/Bioinformatics%20Data%20Skills%20Reproducible%20and%20Robust%20Research%20with%20Open%20Source%20Tools%20by%20Vince%20Buffalo.pdf)
+
+
+
