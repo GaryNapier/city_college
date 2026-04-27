@@ -4,7 +4,7 @@ author: "Gary Napier gary.napier@ccn.ac.uk"
 format:
   revealjs:
     smaller: true
-    logo: ccn_logo.png
+    logo: img/ccn_logo.png
     css: setup_and_organisation.css
     footer: "Access to Computing - setup and organisation"
     embed-resources: true
@@ -28,7 +28,7 @@ format:
 - If you do find the "right" file, which version is correct?
 - Do everything for "future you"
 
-![](confused.jpg)
+![](img/confused.jpg)
 
 # Projects as the "unit" of organisation
 
@@ -208,9 +208,9 @@ project_2.doc
 - Github (or Bitbucket, etc) - YES ✅
 
 ::: {layout-ncol=2}
-![](cloud.png){width=300}
+![](img/cloud.png){width=300}
 
-![](github_logo.png){width=300}
+![](img/github_logo.png){width=300}
 :::
 
 
