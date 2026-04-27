@@ -4,7 +4,8 @@ author: "Gary Napier gary.napier@ccn.ac.uk"
 format:
   revealjs:
     smaller: true
-    logo: ccn_logo.jpg
+    logo: ccn_logo.png
+    css: setup_and_organisation.css
     footer: "Access to Computing - setup and organisation"
     embed-resources: true
 ---
@@ -14,7 +15,7 @@ format:
 - Why organisation is important, especially in computing
 - Projects as the "unit" of organisation
 - Directory structure
-- Versions
+- File versions
 - Working on different machines
 - Reproducibility
 
@@ -27,6 +28,8 @@ format:
 - If you do find the "right" file, which version is correct?
 - Do everything for "future you"
 
+![](confused.jpg)
+
 # Projects as the "unit" of organisation
 
 ## Projects as the "unit" of organisation
@@ -38,12 +41,14 @@ format:
 ## Projects as the "unit" of organisation
 
 - DON'T have folders that are for e.g. 
-  - Any and all types of scripts or files, e.g. a folder called `python_scripts`
-  - Work that's from a particular location or context (see my Github repo mistakes later)
+  - Any and all types of scripts or files, e.g. a folder called `python_scripts` ❌
+    - But you **could** have a folder called `python_scripts` that is a **subfolder** within a **project** - i.e. the Python scripts are *only* relevant to that project
+
+  - Work that's from a particular location or context (see my Github repo mistakes later)  ❌
   
 ## Projects as the "unit" of organisation
 
-- See Chapter 2 of ![Bioinformatics Data Skills](https://womengovtcollegevisakha.ac.in/departments/Bioinformatics%20Data%20Skills%20Reproducible%20and%20Robust%20Research%20with%20Open%20Source%20Tools%20by%20Vince%20Buffalo.pdf)
+- See Chapter 2 of [Bioinformatics Data Skills](https://womengovtcollegevisakha.ac.in/departments/Bioinformatics%20Data%20Skills%20Reproducible%20and%20Robust%20Research%20with%20Open%20Source%20Tools%20by%20Vince%20Buffalo.pdf){target="_blank"}
 
 > "Creating a well-organized directory structure is the foundation of a reproducible bioinformatics project" - Vince Buffalo (p.21)
 
@@ -139,20 +144,20 @@ project_example/
 
 ## Projects as the "unit" of organisation
 
-- See also the R package site ![Project Template](projecttemplate.net)
+- See also the R package site [Project Template](http://projecttemplate.net/){target="_blank"}
 - Good example of software that automates project structure
 - Good "philosophy" of organisation
-- See the ![Architecture](http://projecttemplate.net/architecture.html) section for layouts and types of files commonly used in an analysis project
+- See the [Architecture](http://projecttemplate.net/architecture.html){target="_blank"} section for layouts and types of files commonly used in an analysis project
 
 ## Projects as the "unit" of organisation
 
-![My Github repos](https://github.com/GaryNapier?tab=repositories)
+[My Github repos](https://github.com/GaryNapier?tab=repositories){target="_blank"}
 
 - Let's look at some mistakes here!
 
 ## Projects as the "unit" of organisation
 
-- Excellent example of project structure - ![Tiny Python Projects](https://github.com/kyclark/tiny_python_projects/tree/master)
+- Excellent example of project structure - [Tiny Python Projects](https://github.com/kyclark/tiny_python_projects/tree/master){target="_blank"}
 - Subfolders for each discrete task/sub-project
 - Named clearly and numbered sequentially
 
@@ -161,16 +166,18 @@ project_example/
 ## File versions
 
 - Never, ever, EVER doing this.. Your `project` directory looks like this:
-`project_rough.doc`
-`project_final.doc`
-`project_final_edit.doc`
-`project_final_edit_1.doc`
-`project_FINAL.doc`
-`project_FINAL_1.doc`
-`project_FINAL_FINAL.doc`
-`project_FINAL_FINAL_HAND_IN.doc`
-`project_FINAL_FINAL_HAND_IN_THIS_REALLY_IS_MY_DEFINITIVE_FINAL_VERSION.doc`
-`project_2.doc`
+```
+project_rough.doc
+project_final.doc
+project_final_edit.doc
+project_final_edit_1.doc
+project_FINAL.doc
+project_FINAL_1.doc
+project_FINAL_FINAL.doc
+project_FINAL_FINAL_HAND_IN.doc
+project_FINAL_FINAL_HAND_IN_THIS_REALLY_IS_MY_DEFINITIVE_FINAL_VERSION.doc
+project_2.doc
+```
 
 - I've done this so you don't have to. 
 
@@ -187,22 +194,29 @@ project_example/
 
 ## Working on different machines - problem
 
-- You start work on a file at City College.. e.g. `picnic_task.py`
-- That evening you need to work on THE SAME file (`picnic_task.py`) 
-  - (NOT a different version of the work in a different file e.g. `picnic_task_HOME_VERSION.py`)
-- How do you then access the same file (`picnic_task.py`) at home?
+- You start work on a file at City College.. e.g. `programming_task.py`
+- That evening you need to work on THE SAME file (`programming_task.py`) 
+  - (NOT a different version of the work in a different file e.g. `programming_task_HOME_VERSION.py`)
+- How do you then access the same file (`programming_task.py`) at home?
 
 ## Working on different machines - solution
 
-- email it to yourself? - NO
-- memory stick? - NO
+- email it to yourself? - NO ❌
+- memory stick? - NO ❌
 
-- Cloud - YES
-- Github (or Bitbucket, etc) - YES
+- Cloud - YES ✅
+- Github (or Bitbucket, etc) - YES ✅
+
+::: {layout-ncol=2}
+![](cloud.png){width=300}
+
+![](github_logo.png){width=300}
+:::
+
 
 ## Working on different machines - solution
 
-- Sub-lecture - ![Setup lecture after making LOTS of mistakes](https://docs.google.com/presentation/d/1IXz_5pn1aqkKsRSgdeXwmgHAVR5R6GR5Xe58IcrOJvw/edit?usp=sharing)
+- Sub-lecture - [Setup lecture after making LOTS of mistakes](https://docs.google.com/presentation/d/1IXz_5pn1aqkKsRSgdeXwmgHAVR5R6GR5Xe58IcrOJvw/edit?usp=sharing){target="_blank"}
 
 # Reproducibility
 
@@ -229,22 +243,22 @@ project_example/
 
 - Pseudo code:
 
-- NO
-```
-three_mo_ago = "2026-04-24" - 3
-```
-
-- Yes
-```
-three_mo_ago = date_today() - 3
-```
-
-- Yes, better
-```
-todays_date = date_today()
-months_ago_from_today = 3
-three_mo_ago = todays_date - months_ago_from_today
-```
+  - NO  ❌
+  ```
+  three_mo_ago = "2026-04-24" - 3
+  ```
+  
+  - Yes ✅
+  ```
+  three_mo_ago = date_today() - 3
+  ```
+  
+  - Yes, better ✅
+  ```
+  todays_date = date_today()
+  months_ago_from_today = 3
+  three_mo_ago = todays_date - months_ago_from_today
+  ```
 
 # General tips
 
@@ -255,28 +269,30 @@ three_mo_ago = todays_date - months_ago_from_today
 ## File names
 
 - DO NOT have spaces in your file names - this makes it really hard to process the file names as data 
-  - You have to wrap the filename in backticks ("`") and is a pain for you and for programming when you want to call file names. 
+  - You have to wrap the filename in backticks ("```") and is a pain for you and for programming when you want to call file names. 
 - Use underscores or dashes
   
-  - Bad - `my project/python scripts/data cleaning and wrangling.py`
-  - Good - `my_project/python_scripts/data_cleaning_and_wrangling.py`
-  - Good - `my-project/python-scripts/data-cleaning-and-wrangling.py`
+  - Bad ❌ - `my project/python scripts/data cleaning and wrangling.py`
+  - Good ✅ - `my_project/python_scripts/data_cleaning_and_wrangling.py`
+  - Good ✅ - `my-project/python-scripts/data-cleaning-and-wrangling.py`
   
 - Get in the habit of this, naming every file you ever create as something informative and without spaces, even if the file seems unimportant
 
 ## File names
 
 - Number ordered - especially if the scripts run in sequence
-  - Good - `my_project/python_scripts/01_data_cleaning_and_wrangling.py`
+  - Good ✅ `my_project/python_scripts/01_data_cleaning_and_wrangling.py`
 - Dates
-  - Good - `my_project/python_scripts/01_data_cleaning_and_wrangling_20260403.py`
+  - Good ✅ - `my_project/python_scripts/01_data_cleaning_and_wrangling_20260403.py`
 - short but descriptive
   - I'd rather use very long names and know what the file is than a short name and not know
 
 
 ## Further reading and resources
 
-![Bioinformatics Data Skills](https://womengovtcollegevisakha.ac.in/departments/Bioinformatics%20Data%20Skills%20Reproducible%20and%20Robust%20Research%20with%20Open%20Source%20Tools%20by%20Vince%20Buffalo.pdf)
+[Bioinformatics Data Skills](https://womengovtcollegevisakha.ac.in/departments/Bioinformatics%20Data%20Skills%20Reproducible%20and%20Robust%20Research%20with%20Open%20Source%20Tools%20by%20Vince%20Buffalo.pdf){target="_blank"}
+
+[Happy Git with R](https://happygitwithr.com/)
 
 
 
