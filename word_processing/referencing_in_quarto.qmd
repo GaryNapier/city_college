@@ -200,6 +200,14 @@ And then reference in-text, as usual:
 
 (See [Great Tables](https://posit-dev.github.io/great-tables/articles/intro.html) package in Python for making these kinds of tables)
 
+### Other
+
+Again, there are loads and loads of options for cross-referencing in Quarto, including tags for many types of objects, including equations, lists, codeblocks, creating links for sections so the reader can click and jump to the section, sub-figures and sub-tables, and many more, so be sure to check the [Cross referencing in Quarto](https://quarto.org/docs/authoring/cross-references.html) page. 
+
+... 
+
+I don't know about you, but this system is so much better than the fiddly point, click, highlight, copy/paste refererence and cross-reference system you get with Word or Docs. Plus, this script is just a plain text file that I can save to the Cloud or Github, and as long as I have or someone else has my images and `.bib` file, then the output `.docx` file is completely reproducible. 
+
 # Resources 
 
 [Quarto official documentation](https://quarto.org/)
