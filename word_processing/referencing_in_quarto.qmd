@@ -2,11 +2,12 @@
 title: "Referencing in Quarto"
 format: docx
 jupyter: python3
+toc: true
 bibliography: AI_refs.bib
 csl: harvard-cite-them-right.csl
 ---
 
-# Referencing in Quarto 
+# Referencing in Quarto
 
 [Referencing in Quarto documentation](https://quarto.org/docs/authoring/citations.html)
 
@@ -24,9 +25,9 @@ It’s also easier because it’s all done in code, so no more pointing and clic
 
 ## Setup
 
-### yaml header
+### YAML header
 
-You'll see that at the top of this script there is a 'yaml' header:
+You'll see that at the top of this script there is a 'YAML' header:
 
 ```
 ---
@@ -45,11 +46,15 @@ csl: harvard-cite-them-right.csl
 
 `jupyter:` - This is the engine that converts the Quarto document/Markdown code into whatever format you're running. I don't know too much about the detail of this other than you need `jupyter` and `Python` installed. 
 
+`toc:` - Set to `true` if you want a Table of Contents. 
+
 `bibliography:` - This is the `.bib` file of references you'll need to generate from our Zotero reference list (see below). 
 
 `csl:` - As we're using Harvard Cite Them Right referencing style, Quarto needs a `.csl` file to convert the list of references in the `.bib` file to the correct style formatting. This can be found here - https://github.com/citation-style-language/styles/blob/master/harvard-cite-them-right.csl. 
 You'll need a different `.csl` file at university or whoever you're writing for, depending on what format they use. There are thousands and thousands of `.csl` files, one for each journal and, well basically anything you can think of. 
 **Put this file in the same directory as the Quarto script otherwise it won't find it**.
+
+There are lots of other options you can put into the YAML header - see [YAML options](https://quarto-tdg.org/yaml) to start with.
 
 ### In Zotero
 
@@ -114,7 +119,92 @@ OR
 
 ## Cross-referencing
 
+[Cross referencing in Quarto](https://quarto.org/docs/authoring/cross-references.html)
 
+Here is how to reference figures, tables and equations *within* your document, just like we did in the Google Doc. 
+
+### Figures from saved images
+
+Here is a figure called by specifying its path and giving it a unique tag with the curly braces and `#`:
+
+![Or logic gate](img/or_gate.png){#fig-or-gate}
+
+Then you want to refer to this figure in the text like this: 
+
+	“As we can see from the Or-gate diagram (@fig-or-gate)...”
+
+“As we can see from the Or-gate diagram (@fig-or-gate)...”
+
+### Figures from plots/code
+
+Of course, your figures might be output by bits of code if you're automating for reproducibility (which you should!). 
+
+Then we have a code block with the tags for the caption (`fig-cap`) (telling the reader what the figure/plot is) and the unique tag (`label`) so we can refer to it in the text. 
+
+```{python}
+#| label: fig-example-python-plot
+#| fig-cap: "Example Python plot"
+
+import matplotlib.pyplot as plt
+plt.plot([1,23,2,4])
+plt.show()
+```
+
+Then we reference in the text again: 
+
+    "For example, see @fig-example-python-plot".
+
+"For example, see @fig-example-python-plot".
+
+### Tables
+
+Likewise, we might have tables to reference. 
+
+We can do simple tables in markdown and reference them like this:
+
+| **A** | **B** | **Q** |
+|------|------|------|
+| T    | T    | T    |
+| T    | F    | T    |
+| F    | T    | T    |
+| F    | F    | F    |
+
+: Or-gate truth table {#tbl-or-gate}
+
+    "See Or-gate truth table @tbl-or-gate."
+
+"See Or-gate truth table (@tbl-or-gate)."
+
+Or, like with plots we can use code to generate or import tables. 
+
+```{python}
+#| label: tbl-example-python-table
+#| tbl-cap: "Example Python table from code"
+
+from great_tables import GT, md, html
+from great_tables.data import islands
+
+islands_mini = islands.head(10)
+# Create a display table showing ten of the largest islands in the world
+gt_tbl = GT(islands_mini)
+
+# Show the output table
+gt_tbl
+```
+
+And then reference in-text, as usual:
+
+    "As the table of islands shows (@tbl-example-python-table)..."
+
+"As the table of islands shows (@tbl-example-python-table)..."
+
+(See [Great Tables](https://posit-dev.github.io/great-tables/articles/intro.html) package in Python for making these kinds of tables)
+
+# Resources 
+
+[Quarto official documentation](https://quarto.org/)
+
+[Quarto: The Practical Guide](https://quarto-tdg.org/)
 
 ## Bibliography / References 
 
