@@ -1,0 +1,126 @@
+---
+title: "Unix/Linux and the command line"
+author: "Gary Napier gary.napier@ccn.ac.uk"
+format:
+  revealjs:
+    smaller: true
+    logo: img/ccn_logo.png
+    css: ../quarto/slides_styles.css
+    footer: "Access to Computing - Unix/Linux and command line"
+    embed-resources: true
+---
+
+# Command line basics
+
+## Command line basics
+
+- What is the command line?
+- Basically, every time you do anything on a computer, like double click on a file to open it, delete a file or start an application, something is happening "in the background".
+- In other words, some code is being executed. 
+- The command line is just a way of by-passing all the point-and-click/drag-and-drop, and instead running those commands directly with code. 
+- This means you can program the computer to execute a set of instructions. 
+- Plus it's very powerful as there are loads of commands and options, and you can hack the system to your liking and just interact with it in a very flexible way. 
+
+## Command line basics
+
+‼️DANGER‼️️
+
+- The command line is very powerful, especially the command `rm` ("remove")
+  - This will delete files without asking if you're sure, and there's no way to retrieve it (no Recycle bin!)
+  - It's even possible to erase your entire machine with one line of `rm` code and certain arguments to the command. 
+
+## Command line basics
+
+- Open a terminal, should see:
+
+```
+<username>$
+
+```
+
+
+## Command line basics
+
+Try a few simple commands:
+
+```
+ls
+ls -a
+ls -a -l
+ls -a -l -h
+ls -alh
+ls -alh Documents
+echo "hello"
+cd Documents
+cd ../
+
+```
+## Command line basics
+
+Meaning:
+
+|Command | Meaning |
+| ls | List files |
+| ls -a | List all files (including hidden) |
+| ls -a -l | List all files and put them in a neat list, displaying properties |
+| ls -a -l -h | List all files and put them in a neat list, displaying properties, and make human readable |
+| ls -alh  | List all files and put them in a neat list, displaying properties |
+| ls -alh Documents |  | List all files and put them in a neat list, displaying properties, in the Docuemtns folder |
+| echo "hello" | Print the string "Hello" |
+| cd Documents | Change directory to Documents |
+| cd ../ | Change directory to one level up |
+
+## Command line basics
+
+Parts of a command:
+
+| Command | Flag (option) | Argument |
+| ls | | |
+| ls | -a |  |
+| ls | -a -l | | 
+| ls | -a -l -h | | 
+| ls | -alh | |
+| ls | -alh | Documents | 
+| Do this... | in this way... | to this object |
+
+## Command line basics
+
+Other basic commands:
+
+| Command | Meaning |
+| cp [file] [dir] | copy |
+| mv [file] [dir] | move (or rename) |
+| rm [file] | remove |
+| pwd | Print Working Directory |
+| mkdir [dir name] | Make new Directory |
+| cat [file] | print the contents of a file |
+| less [file] | print contents of a file (but allows scrolling; press q to escape) |
+
+## Command line basics
+
+Navigation
+
+- Knowing where you are is key to using the command line.
+- Run `cd ~/` to navigate to the home directory
+- Run `pwd` (Print Working Directory) to see where you are. 
+  - Should see `/c/Users/<username>`
+- Run `ls Documents` to see what's in there. 
+- Now `cd` into Documents. 
+- Run `mkdir test_dir` (never spaces, remember! Now you can see why we don't use spaces)
+- `cd test_dir`
+- Now try `ls Documents` again
+- Should see `ls: cannot access 'Documents': No such file or directory`
+- This is because the file arguments to the commands are *relative* to the current working directory
+
+## Tips 
+
+- Tab-completion
+
+
+
+
+
+
+
+
+
