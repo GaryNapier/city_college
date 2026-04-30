@@ -151,6 +151,10 @@ Navigation
   - This is because we also have the `Dowloads` directory, so it won't complete unit I differentiate between the two
   - Have to type at least `Doc` and then tab-complete
 
+## Tips 
+
+- Press up arrow key x times to get x previous commands
+
 
 # Unix file structure
 
@@ -177,6 +181,7 @@ Navigation
 `/usr/sbin`
 `/usr/local`
 
+## Unix file structure
 
 - Under `/usr/local`:
 
@@ -185,7 +190,10 @@ Navigation
 `/usr/local/sbin`
 
 
+## Unix file structure
 
+- So what was the `~/` directory?
+- This is `home/<filename>/` (or `Users/<filename>/` on Mac)
 
 
 ## Resources 
