@@ -12,6 +12,8 @@ Some writing here... Lorem ipsum dolor sit amet, consectetur adipiscing elit...
 
 For markdown basics see: [Markdown Basics](https://quarto.org/docs/authoring/markdown-basics.html). 
 
+See also: [Extended syntax](https://www.markdownguide.org/extended-syntax/)
+
 Paste some of the example code in that page into this file and render after each paste, play around with it. 
 
 ## Code blocks:
