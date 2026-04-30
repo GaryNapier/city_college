@@ -31,6 +31,14 @@ format:
 
 ## Command line basics
 
+- How to STOP a process
+
+`ctrl + C`
+
+- Also `ctrl` (NOT `command`) on Mac
+
+## Command line basics
+
 - Open a terminal, should see:
 
 ```
@@ -60,6 +68,7 @@ cd ../
 Meaning:
 
 |Command | Meaning |
+|:--------|:--------|
 | ls | List files |
 | ls -a | List all files (including hidden) |
 | ls -a -l | List all files and put them in a neat list, displaying properties |
@@ -75,6 +84,7 @@ Meaning:
 Parts of a command:
 
 | Command | Flag (option) | Argument |
+|:--------:|:--------:|:--------:|
 | ls | | |
 | ls | -a |  |
 | ls | -a -l | | 
@@ -88,9 +98,10 @@ Parts of a command:
 Other basic commands:
 
 | Command | Meaning |
+|:--------|:--------|
 | cp [file] [dir] | copy |
 | mv [file] [dir] | move (or rename) |
-| rm [file] | remove |
+| rm [file] | remove ‼️DANGER‼️️ |
 | pwd | Print Working Directory |
 | mkdir [dir name] | Make new Directory |
 | cat [file] | print the contents of a file |
@@ -101,6 +112,7 @@ Other basic commands:
 Navigation
 
 - Knowing where you are is key to using the command line.
+- Where a file is is called the **path**.
 - Run `cd ~/` to navigate to the home directory
 - Run `pwd` (Print Working Directory) to see where you are. 
   - Should see `/c/Users/<username>`
@@ -111,14 +123,74 @@ Navigation
 - Now try `ls Documents` again
 - Should see `ls: cannot access 'Documents': No such file or directory`
 - This is because the file arguments to the commands are *relative* to the current working directory
+- To refer to the `Documents` path, you have to "go up one"
+- We're currently in the `test_dir` file, so that's out current working directory
+- `Documents` is here relative to `test_dir`:
 
+```
+  ├── ~/
+  ├── Documents
+    └── test_dir
+```
+
+- It's good to have a mental model of this "tree" structure when you're navigating the paths 
+  - In fact you can print this tree out if you download the `tree` package: `sudo apt-get install tree`
+  
+- So, to list files in `Documents` (one level up) we do `ls ../`
+- `../` is a special string to go one up and you can repeat this as many times as you want to get to a file:
+  - `../../../<file>`
+  - `../../../<dir>/<dir>/<file>`
+  
 ## Tips 
 
 - Tab-completion
+  - As you're typing it becomes a pain to write out things like the commands and paths file names.
+  - Start typing e.g. the file path and hit **tab**. It should complete the name of the file if it's there. 
+  - It will only complete the *unique* name of file once you've typed past the part that that it has in common with other file(s)
+  - e.g. if I was to list the files in `Documents`, I write `Do` and hit tab and it won't complete
+  - This is because we also have the `Dowloads` directory, so it won't complete unit I differentiate between the two
+  - Have to type at least `Doc` and then tab-complete
+
+
+# Unix file structure
+
+## Unix file structure
+
+- Root folder is `/`. Try `ls /`
+
+| Directory | short for | Notes |
+|---|-------|-------------|
+| `/bin` | binaries | Executable, compiled programs (all the commands we've been using) |
+| `/dev` | devices | files that can interact with hardware |
+| `/etc` | | config files - rules that govern how things run |
+| `/home` | | each user lives under here (Mac uses `User`) |
+| `/lib` | library | supports the programs in `bin/` (no `/lib` in Mac OSX, but there is `/usr/lib`)|
+| `/sbin` | "special" binary | files like `bin/` but most can't be run directly |
+| `/var` | variable | things that change all the time | 
+
+## Unix file structure
+
+- Under `/usr`:
+
+`/usr/bin`
+`/usr/lib`
+`/usr/sbin`
+`/usr/local`
+
+
+- Under `/usr/local`:
+
+`/usr/local/bin`
+`/usr/local/lib`
+`/usr/local/sbin`
 
 
 
 
+
+## Resources 
+
+[Unix tutorial](https://dasher.wustl.edu/chem430/readings/unix-tutorial.pdf)
 
 
 
