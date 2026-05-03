@@ -1,0 +1,47 @@
+---
+title: "Thinking like a computer scientist"
+author: "Gary Napier gary.napier@ccn.ac.uk"
+format:
+  revealjs:
+    smaller: true
+    logo: img/ccn_logo.png
+    css: ../quarto/slides_styles.css
+    footer: "Access to Computing - Unix/Linux and command line"
+    embed-resources: true
+---
+
+
+# Problem solving
+
+# Levels of problem solving
+
+[](screenshots/problem_solving_dialogue.png)
+[](screenshots/problem_solving_flowchart.png)
+[](screenshots/problem_solving_formal.png)
+[](screenshots/problem_solving_hierarchy.png)
+[](screenshots/problem_solving_mess.png)
+[](screenshots/problem_solving_problem.png)
+[](screenshots/problem_solving_problems_to_puzzles.png)
+[](screenshots/problem_solving_puzzle.png)
+[](screenshots/problem_solving_topology.png)
+
+# Tenacity
+
+# Google searching
+
+# Creativity 
+
+# Collaboration   
+
+# AI
+
+# Resources
+
+[How to think like a computer scientist](https://www.youtube.com/watch?v=sVUda0o98GQ) short video
+
+[How to think like a Computer Scientist](https://runestone.academy/ns/books/published/thinkcspy/index.html) - interactive book with Python code
+
+The Strategy Unit, Steve Wyatt - [An introduction to problem structuring](https://www.youtube.com/watch?v=-X09nvNQkYg) (~50 mins)
+
+[Elements and Principles of Data Analysis](https://www.researchgate.net/publication/331888135_Elements_and_Principles_of_Data_Analysis)
+
