@@ -73,7 +73,7 @@ Meaning:
 | ls -a | List all files (including hidden) |
 | ls -a -l | List all files and put them in a neat list, displaying properties |
 | ls -a -l -h | List all files and put them in a neat list, displaying properties, and make human readable |
-| ls -alh  | List all files and put them in a neat list, displaying properties |
+| ls -alh  | Same as above but don't need `-` for every flag |
 | ls -alh Documents |  | List all files and put them in a neat list, displaying properties, in the Docuemtns folder |
 | echo "hello" | Print the string "Hello" |
 | cd Documents | Change directory to Documents |
@@ -109,7 +109,7 @@ Other basic commands:
 
 ## Command line basics
 
-Navigation
+**Navigation**
 
 - Knowing where you are is key to using the command line.
 - Where a file is is called the **path**.
@@ -127,11 +127,19 @@ Navigation
 - We're currently in the `test_dir` file, so that's out current working directory
 - `Documents` is here relative to `test_dir`:
 
+## Command line basics
+
+**Navigation**
+
 ```
   ├── ~/
   ├── Documents
     └── test_dir
 ```
+
+## Command line basics
+
+**Navigation**
 
 - It's good to have a mental model of this "tree" structure when you're navigating the paths 
   - In fact you can print this tree out if you download the `tree` package: `sudo apt-get install tree`
@@ -148,13 +156,47 @@ Navigation
   - Start typing e.g. the file path and hit **tab**. It should complete the name of the file if it's there. 
   - It will only complete the *unique* name of file once you've typed past the part that that it has in common with other file(s)
   - e.g. if I was to list the files in `Documents`, I write `Do` and hit tab and it won't complete
-  - This is because we also have the `Dowloads` directory, so it won't complete unit I differentiate between the two
+  - This is because we also have the `Downloads` directory, so it won't complete unit I differentiate between the two
   - Have to type at least `Doc` and then tab-complete
 
 ## Tips 
 
 - Press up arrow key x times to get x previous commands
 
+# Wildcards
+
+## Wildcards - `*`
+
+- Character `*` is a wildcard
+
+- Matches against none or more character(s) in a file (or directory) name. 
+
+- From `Documents` (or wherever you're choosing to work), run:
+
+- `touch test_dir/fruit_{apples,bananas,pears}.txt`
+
+- `touch test_dir/vegetables_{carrots,cabbages,onions}.txt`
+
+- Now run:
+- `ls test_dir/fruit_*`
+- `ls test_dir/vegetables_*`
+
+- Or even just:
+- `ls test_dir/fr*`
+- `ls test_dir/veg*`
+
+Try:
+- `ls test_dir/*.txt`
+
+- What does it return?
+
+## Wildcards - `?`
+
+- Character `?` is also a wildcard
+- Matches exactly one character. 
+- So `ls ?ouse` will match files like `'house'` and `'mouse'`, but not `'grouse'`.
+
+Try `ls test_dir/vegetables_?arrots.txt`
 
 # Unix file structure
 
@@ -177,8 +219,11 @@ Navigation
 - Under `/usr`:
 
 `/usr/bin`
+
 `/usr/lib`
+
 `/usr/sbin`
+
 `/usr/local`
 
 ## Unix file structure
@@ -186,7 +231,9 @@ Navigation
 - Under `/usr/local`:
 
 `/usr/local/bin`
+
 `/usr/local/lib`
+
 `/usr/local/sbin`
 
 
@@ -195,12 +242,46 @@ Navigation
 - So what was the `~/` directory?
 - This is `home/<filename>/` (or `Users/<filename>/` on Mac)
 
+# Streams
+
+## Streams
+
+- What is the command line actually doing?
+- Standard in
+- Standard out 
+- Standard error
+
+# Piping
+
+## Piping 
+
+- Here's where we can start writing simple programs in the command line
+
+- The pipe (`"|"`) takes the output of one command and passes it to the next command
+
+- Run: `ls test_dir/veg* | grep carrot
+
+
+# Text processing and sub-languages
+
+## Text processing and sub-languages
+
+- AWK - https://en.wikipedia.org/wiki/AWK
+- sed - https://en.wikipedia.org/wiki/Sed
+- grep - https://en.wikipedia.org/wiki/Grep
+  - Regular expressions (regex) - https://en.wikipedia.org/wiki/Regular_expression
 
 ## Resources 
 
 [Unix tutorial](https://dasher.wustl.edu/chem430/readings/unix-tutorial.pdf)
 
+[Introducing the Unix Command Line](https://iopn.library.illinois.edu/pressbooks/demystifyingtechnology/back-matter/introducing-the-unix-command-line/)
 
+[Bash tutorials](https://www.w3schools.com/bash/index.php)
+
+[](https://matthewhiggins2017.github.io/BIO726P/practicals/Bonus_Unix_Skills/)
+
+[csvtk](https://bioinf.shenwei.me/csvtk/) - VERY useful toolkit for dealing with csv files, file conversion, text processing and more. 
 
 
 
