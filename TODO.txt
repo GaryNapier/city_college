@@ -1,0 +1,15 @@
+
+CITY COLLEGE TO DO
+
+- Blackboard - get Quarto HTML onto system
+- Read Joel message 
+	- Reply
+	- Write down some ideas for projects and tasks
+- Outline programming unit 
+	- Think like a CS
+	- Tiny Python Projects
+- Github codespace
+- Gitlab / Bitbucket?
+- QTLS - ask Lisa
+- Meet Nerys's contacts
+
