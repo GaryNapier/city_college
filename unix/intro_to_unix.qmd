@@ -4,8 +4,8 @@ author: "Gary Napier gary.napier@ccn.ac.uk"
 format:
   revealjs:
     smaller: true
-    logo: img/ccn_logo.png
-    css: ../quarto/slides_styles.css
+    logo: ../quarto/img/ccn_logo.png
+    css: ../quarto/css/slides_styles.css
     footer: "Access to Computing - Unix/Linux and command line"
     embed-resources: true
 ---
@@ -15,6 +15,45 @@ format:
 ## Command line basics
 
 - What is the command line?
+- Might also hear "terminal", "console", "BASH", "shell", "zsh (z shell)", "powershell (Windows)" (diffs explained below)
+
+- These are examples of Terminals, and it's the first thing to open to access the command line:
+
+::: {layout-ncol=2}
+![](img/terminal_mac.png){width=300}
+
+![](img/terminal_unix.png){width=300}
+:::
+
+## Command line basics
+
+- What is the command line?
+- Might also hear "terminal", "console", "BASH", "shell", "zsh (z shell)", "powershell (Windows)" (diffs explained below)
+
+- The "command line" is just the line where you're running commands from really.. 
+![](img/terminal_mac_command_line.png)
+
+
+## Command line basics
+
+- What is the command line?
+- Might also hear "terminal", "console", "BASH", "shell", "zsh (z shell)", "powershell (Windows)" (diffs explained below)
+
+| Term | Meaning |
+|------|---------|
+| Terminal | The application that lets you run commands from the command line | 
+| Command line | Line for taking the commands, but also used to stand for all these other definitions! |
+| shell | The program which actually processes commands | 
+| BASH | ("Bourne Again SHell") The language used to run the commands (but also actually a type of shell.. confusing but don't worry about it) |
+
+- You can also run terminals from IEDs like RStudio or VSCode
+
+- Also try:
+- [Terminal Temple](https://www.terminaltemple.com/) - terminal simulator 
+- [Terminal Tutor](https://www.terminaltutor.com/) - terminal tutorials
+
+- "Terminal", "shell" and "command line" are often used interchangeably to indicate a text-based system for navigating your operating system. 
+
 - Basically, every time you do anything on a computer, like double click on a file to open it, delete a file or start an application, something is happening "in the background".
 - In other words, some code is being executed. 
 - The command line is just a way of by-passing all the point-and-click/drag-and-drop, and instead running those commands directly with code. 
@@ -63,21 +102,28 @@ cd Documents
 cd ../
 
 ```
+
 ## Command line basics
 
-Meaning:
+```{css, echo = FALSE}
+
+.reveal table {
+  font-size: smaller;
+}
+
+```
 
 |Command | Meaning |
 |:--------|:--------|
-| ls | List files |
-| ls -a | List all files (including hidden) |
-| ls -a -l | List all files and put them in a neat list, displaying properties |
-| ls -a -l -h | List all files and put them in a neat list, displaying properties, and make human readable |
-| ls -alh  | Same as above but don't need `-` for every flag |
-| ls -alh Documents |  | List all files and put them in a neat list, displaying properties, in the Docuemtns folder |
-| echo "hello" | Print the string "Hello" |
-| cd Documents | Change directory to Documents |
-| cd ../ | Change directory to one level up |
+| `ls` | List files |
+| `ls -a` | List all files (including hidden) |
+| `ls -a -l` | List all files and put them in a neat list, displaying properties |
+| `ls -a -l -h` | List all files and put them in a neat list, displaying properties, and make human readable |
+| `ls -alh`  | Same as above but don't need `-` for every flag |
+| `ls -alh Documents` |  | List all files and put them in a neat list, displaying properties, in the Docuemtns folder |
+| `echo "hello"` | Print the string "Hello" |
+| `cd Documents` | Change directory to Documents |
+| `cd ../` | Change directory to one level up |
 
 ## Command line basics
 
@@ -85,13 +131,14 @@ Parts of a command:
 
 | Command | Flag (option) | Argument |
 |:--------:|:--------:|:--------:|
-| ls | | |
-| ls | -a |  |
-| ls | -a -l | | 
-| ls | -a -l -h | | 
-| ls | -alh | |
-| ls | -alh | Documents | 
 | Do this... | in this way... | to this object |
+| `ls` | | |
+| `ls` | `-a` |  |
+| `ls` | `-a -l` | | 
+| `ls` | `-a -l -h` | | 
+| `ls` | `-alh` | |
+| `ls` | `-alh` | `Documents` | 
+
 
 ## Command line basics
 
@@ -162,6 +209,7 @@ Other basic commands:
 ## Tips 
 
 - Press up arrow key x times to get x previous commands
+- Press down arrow key to go forward again (if you go past something)
 
 # Wildcards
 
@@ -273,13 +321,17 @@ Try `ls test_dir/vegetables_?arrots.txt`
 
 ## Resources 
 
+[Terminal Temple](https://www.terminaltemple.com/) - terminal simulator
+
+[Terminal Tutor](https://www.terminaltutor.com/) - terminal tutorials
+
 [Unix tutorial](https://dasher.wustl.edu/chem430/readings/unix-tutorial.pdf)
 
 [Introducing the Unix Command Line](https://iopn.library.illinois.edu/pressbooks/demystifyingtechnology/back-matter/introducing-the-unix-command-line/)
 
 [Bash tutorials](https://www.w3schools.com/bash/index.php)
 
-[](https://matthewhiggins2017.github.io/BIO726P/practicals/Bonus_Unix_Skills/)
+[Bonus Unix Skills](https://matthewhiggins2017.github.io/BIO726P/practicals/Bonus_Unix_Skills/)
 
 [csvtk](https://bioinf.shenwei.me/csvtk/) - VERY useful toolkit for dealing with csv files, file conversion, text processing and more. 
 
