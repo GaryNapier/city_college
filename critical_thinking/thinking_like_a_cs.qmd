@@ -27,6 +27,8 @@ format:
 
 # Tenacity
 
+# Breaking down the problem
+
 # Google searching
 
 # Creativity 
