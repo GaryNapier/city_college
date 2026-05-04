@@ -3,6 +3,7 @@ title: "Unix/Linux and the command line"
 author: "Gary Napier gary.napier@ccn.ac.uk"
 format:
   revealjs:
+    slide-number: true
     smaller: true
     logo: ../quarto/img/ccn_logo.png
     css: ../quarto/css/slides_styles.css
@@ -20,9 +21,9 @@ format:
 - These are examples of Terminals, and it's the first thing to open to access the command line:
 
 ::: {layout-ncol=2}
-![](img/terminal_mac.png){width=300}
+![](img/terminal_mac.png){width=400}
 
-![](img/terminal_unix.png){width=300}
+![](img/terminal_unix.png){width=400}
 :::
 
 ## Command line basics
@@ -31,8 +32,7 @@ format:
 - Might also hear "terminal", "console", "BASH", "shell", "zsh (z shell)", "powershell (Windows)" (diffs explained below)
 
 - The "command line" is just the line where you're running commands from really.. 
-![](img/terminal_mac_command_line.png)
-
+![&nbsp;](img/terminal_mac_command_line.png){width=600 fig-align="center"}
 
 ## Command line basics
 
@@ -104,14 +104,6 @@ cd ../
 ```
 
 ## Command line basics
-
-```{css, echo = FALSE}
-
-.reveal table {
-  font-size: smaller;
-}
-
-```
 
 |Command | Meaning |
 |:--------|:--------|
