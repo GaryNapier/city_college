@@ -9,3 +9,4 @@ docs_dir: docs
 nav:
   - Home: index.md
   - 'Setup and organisation': setup_and_organisation/index.html
+  - 'Command line and Unix': unix/index.html
