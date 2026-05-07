@@ -8,6 +8,7 @@ format:
     css: setup_and_organisation.css
     footer: "Access to Computing - setup and organisation"
     embed-resources: true
+    output-file: index.html
 ---
 
 ## Learning outcomes / overview
