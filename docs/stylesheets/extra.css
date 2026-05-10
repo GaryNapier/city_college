@@ -1,0 +1,16 @@
+.md-grid {
+    max-width: 90rem;
+}
+
+.md-sidebar--secondary {
+    display: none;
+}
+
+.md-main__inner {
+    grid-template-columns: minmax(0, 1fr);
+}
+
+/* Hide right-side table of contents */
+.md-sidebar--secondary {
+    display: none;
+}
