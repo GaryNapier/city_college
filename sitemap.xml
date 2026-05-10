@@ -2,6 +2,14 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
     <url>
          <loc>https://garynapier.github.io/city_college/</loc>
-         <lastmod>2026-05-07</lastmod>
+         <lastmod>2026-05-10</lastmod>
+    </url>
+    <url>
+         <loc>https://garynapier.github.io/city_college/setup_and_org_page/</loc>
+         <lastmod>2026-05-10</lastmod>
+    </url>
+    <url>
+         <loc>https://garynapier.github.io/city_college/unix_page/</loc>
+         <lastmod>2026-05-10</lastmod>
     </url>
 </urlset>
