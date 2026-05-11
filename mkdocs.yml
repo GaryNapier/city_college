@@ -3,6 +3,8 @@ site_url: https://garynapier.github.io/city_college/
 
 theme:
   name: material
+  features:
+    - navigation.expand
 
 docs_dir: docs
 
@@ -14,6 +16,8 @@ nav:
     - 'Referencing in Word/Docs & Zotero': 'word_processing/referencing_with_zotero_page.md'
     - 'Hello Quarto': 'word_processing/hello_quarto/hello_quarto.qmd'
     - 'Referencing in Quarto': 'word_processing/referencing_in_quarto_page.md'
+  - Critical Thinking 1511: 
+    - critical_thinking_page.md
   
 markdown_extensions:
   - attr_list
