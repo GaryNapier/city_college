@@ -10,6 +10,8 @@ nav:
   - Home: index.md
   - setup_and_org_page.md
   - unix_page.md
+  - Word processing:
+    - 'Hello Quarto': 'word_processing/hello_quarto.qmd'
   
 markdown_extensions:
   - attr_list
@@ -17,3 +19,6 @@ markdown_extensions:
   
 extra_css:
   - stylesheets/extra.css
+  
+plugins:
+  - mkquartodocs
