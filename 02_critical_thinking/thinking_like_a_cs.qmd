@@ -4,10 +4,11 @@ author: "Gary Napier gary.napier@ccn.ac.uk"
 format:
   revealjs:
     smaller: true
-    logo: img/ccn_logo.png
-    css: ../quarto/slides_styles.css
-    footer: "Access to Computing - Unix/Linux and command line"
+    logo: ../quarto/img/ccn_logo.png
+    css: ../quarto/css/slides_styles.css
+    footer: "Access to Computing - Thinking like a CS"
     embed-resources: true
+    output-file: index.html
 ---
 
 
