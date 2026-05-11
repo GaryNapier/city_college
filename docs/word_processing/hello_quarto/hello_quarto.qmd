@@ -6,15 +6,15 @@ format:
 jupyter: python3
 ---
 
-[Link to the Quarto markdown code that generated this page](https://github.com/GaryNapier/city_college/blob/main/docs/word_processing/hello_quarto.qmd)
+[Link to the Quarto markdown code that generated this page](https://github.com/GaryNapier/city_college/blob/main/docs/word_processing/hello_quarto/hello_quarto.qmd){target="_blank"}
 
 # Header 1
 
 Some writing here... Lorem ipsum dolor sit amet, consectetur adipiscing elit...
 
-For markdown basics see: [Markdown Basics](https://quarto.org/docs/authoring/markdown-basics.html). 
+For markdown basics see: [Markdown Basics](https://quarto.org/docs/authoring/markdown-basics.html){target="_blank"}. 
 
-See also: [Extended syntax](https://www.markdownguide.org/extended-syntax/)
+See also: [Extended syntax](https://www.markdownguide.org/extended-syntax/){target="_blank"}
 
 Paste some of the example code in that page into this file and render after each paste, play around with it. 
 
@@ -45,7 +45,7 @@ We don't want to include the code block above in the final render, so we used th
  `#| echo: False` 
  to suppress it. 
 
-There are lots of tricks and options with code blocks and inline code, including sourcing external code scripts, but for now in this file we'll stick to absolute basics. (See [Execution options](https://quarto.org/docs/computations/execution-options.html]))
+There are lots of tricks and options with code blocks and inline code, including sourcing external code scripts, but for now in this file we'll stick to absolute basics. (See [Execution options](https://quarto.org/docs/computations/execution-options.html]){target="_blank"})
 
 **Tips and notes**:
 
@@ -63,4 +63,4 @@ There are lots of tricks and options with code blocks and inline code, including
 
 - Render/preview often in case there are any errors. It's easier to fix errors one-by-one rather than writing a huge amount and then having to go through lots of different errors. 
 
-- Further notes: [Python4DS](https://aeturrell.github.io/python4DS/quarto.html)
+- Further notes: [Python4DS](https://aeturrell.github.io/python4DS/quarto.html){target="_blank"}
