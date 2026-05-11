@@ -11,7 +11,7 @@ nav:
   - setup_and_org_page.md
   - unix_page.md
   - Word processing:
-    - 'Hello Quarto': 'word_processing/hello_quarto.qmd'
+    - 'Hello Quarto': 'word_processing/hello_quarto/hello_quarto.qmd'
   
 markdown_extensions:
   - attr_list
