@@ -10,8 +10,10 @@ nav:
   - Home: index.md
   - setup_and_org_page.md
   - unix_page.md
-  - Word processing:
+  - Word processing 3347:
+    - 'Referencing in Word/Docs & Zotero': 'word_processing/referencing_with_zotero_page.md'
     - 'Hello Quarto': 'word_processing/hello_quarto/hello_quarto.qmd'
+    - 'Referencing in Quarto': 'word_processing/referencing_in_quarto_page.md'
   
 markdown_extensions:
   - attr_list
