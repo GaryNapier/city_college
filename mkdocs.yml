@@ -18,6 +18,32 @@ nav:
     - 'Referencing in Quarto': '01_word_processing/referencing_in_quarto_page.md'
   - Critical Thinking 1511: 
     - 'Thinking like a Computer Scientist': '02_critical_thinking/thinking_like_a_cs_page.md'
+  # - Core HE Study Skills 1 - Research 3808
+  #   - '':
+  # - Core HE Study Skills 2 - Pres. and refl. 3809:
+  #   - '':
+  # - Introduction to Computer Networks 3329:
+  #   - '':
+  # - Computer Science Basics 3305:
+  #   - '':
+  # - Programming I - Design a program solution 3363:
+  #   - '':
+  # - Programming II - Develop a program solution 3364:
+  #   - '':
+  # - Programming III - Testing a programming Solution 3365:
+  #   - '':
+  # - Machine Learning and AI 3353:
+  #   - '':
+  # - Website Design - Publish a Website 3334:
+  #   - '':
+  # - Threats to System Security 3343:
+  #   - '':
+  # - Protecting Networked Systems 3337:
+  #   - '':
+  # - Databases 3310:
+  #   - '':
+  # - Extended Independent Project in Computing 3986:
+  #   - '':
   
 markdown_extensions:
   - attr_list
