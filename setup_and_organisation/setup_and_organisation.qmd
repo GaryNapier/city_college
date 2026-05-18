@@ -3,6 +3,7 @@ title: "Setup and organisation"
 author: "Gary Napier gary.napier@ccn.ac.uk"
 format:
   revealjs:
+    slide-number: true
     smaller: true
     logo: img/ccn_logo.png
     css: setup_and_organisation.css
