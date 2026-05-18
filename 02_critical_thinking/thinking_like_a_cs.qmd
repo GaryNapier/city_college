@@ -16,15 +16,32 @@ format:
 
 # Levels of problem solving
 
-[](screenshots/problem_solving_dialogue.png)
-[](screenshots/problem_solving_flowchart.png)
-[](screenshots/problem_solving_formal.png)
-[](screenshots/problem_solving_hierarchy.png)
-[](screenshots/problem_solving_mess.png)
-[](screenshots/problem_solving_problem.png)
-[](screenshots/problem_solving_problems_to_puzzles.png)
-[](screenshots/problem_solving_puzzle.png)
-[](screenshots/problem_solving_topology.png)
+## Levels of problem solving
+![](screenshots/problem_solving_dialogue.png)
+
+## Levels of problem solving
+![](screenshots/problem_solving_flowchart.png)
+
+## Levels of problem solving
+![](screenshots/problem_solving_formal.png)
+
+## Levels of problem solving
+![](screenshots/problem_solving_hierarchy.png)
+
+## Levels of problem solving
+![](screenshots/problem_solving_mess.png)
+
+## Levels of problem solving
+![](screenshots/problem_solving_problem.png)
+
+## Levels of problem solving
+![](screenshots/problem_solving_problems_to_puzzles.png)
+
+## Levels of problem solving
+![](screenshots/problem_solving_puzzle.png)
+
+## Levels of problem solving
+![](screenshots/problem_solving_topology.png)
 
 # Tenacity
 
