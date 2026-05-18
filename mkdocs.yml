@@ -13,9 +13,9 @@ nav:
   - setup_and_org_page.md
   - unix_page.md
   - Word processing 3347:
-    - 'Referencing in Word/Docs & Zotero': 'word_processing/referencing_with_zotero_page.md'
-    - 'Hello Quarto': 'word_processing/hello_quarto/hello_quarto.qmd'
-    - 'Referencing in Quarto': 'word_processing/referencing_in_quarto_page.md'
+    - 'Referencing in Word/Docs & Zotero': '01_word_processing/referencing_with_zotero_page.md'
+    - 'Hello Quarto': '01_word_processing/hello_quarto/hello_quarto.qmd'
+    - 'Referencing in Quarto': '01_word_processing/referencing_in_quarto_page.md'
   - Critical Thinking 1511: 
     - 'Thinking like a Computer Scientist': '02_critical_thinking/thinking_like_a_cs_page.md'
   
