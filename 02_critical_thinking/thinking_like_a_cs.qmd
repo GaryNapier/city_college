@@ -51,7 +51,9 @@ format:
 
 # Creativity 
 
-# Collaboration   
+# Collaboration
+
+# Steal code!
 
 # AI
 
