@@ -1,0 +1,27 @@
+Write a simple Python program (which can be across different scripts) which simulates a bank account from the console/command line.
+The user starts the program and has a menu:
+1. Create new account
+2. Login 
+3. Exit
+
+Option 1 allows user to create username and password
+Option 2 allows login and errors if user is unrecognised
+Option 3 returns to console
+
+From Option 2, once the user is logged in, a further menu is shown:
+1. Withdraw
+2. Deposit
+3. Check balance
+4. Transaction history
+5. Logout
+
+Options 1 and 2 allow user to enter numbers. 
+Withdraw needs to be equal to or less than balance. 
+Deposit is unlimited. 
+Check balance is the current difference between withdraw and deposit.
+Transaction history shows all withdraws and deposits in the session, the resulting balance and the timestamp. 
+Logout returns to the home menu. 
+
+Usernames and passwords do not need to be remembered across sessions (i.e. when users shut down the program and return to console), this is just a coding exercise. 
+
+Use an object-oriented approach. 

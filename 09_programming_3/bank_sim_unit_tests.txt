@@ -1,0 +1,467 @@
+UNIT TEST PLAN — BANK ACCOUNT SYSTEM
+
+
+
+====================================================
+CLASS: Transaction
+====================================================
+
+----------------------------------------
+TEST: Create Transaction Object
+----------------------------------------
+
+Purpose:
+Ensure transaction object stores correct values.
+
+Steps:
+1. Create Transaction object with:
+    type = "Deposit"
+    amount = 100
+    balance = 500
+
+2. Check attributes
+
+Expected Result:
+- transactionType = "Deposit"
+- amount = 100
+- balance = 500
+- timestamp exists
+
+
+
+====================================================
+CLASS: Account
+====================================================
+
+----------------------------------------
+TEST: Create Account
+----------------------------------------
+
+Purpose:
+Ensure account object is initialised correctly.
+
+Steps:
+1. Create Account with username and password
+
+Expected Result:
+- username stored correctly
+- password stored correctly
+- balance = 0
+- transaction list empty
+
+
+
+----------------------------------------
+TEST: Deposit Valid Amount
+----------------------------------------
+
+Purpose:
+Ensure valid deposit updates balance and transactions.
+
+Steps:
+1. Create account
+2. Deposit 100
+
+Expected Result:
+- balance = 100
+- transaction added
+- transaction type = "Deposit"
+
+
+
+----------------------------------------
+TEST: Deposit Zero
+----------------------------------------
+
+Purpose:
+Ensure zero deposit is rejected.
+
+Steps:
+1. Create account
+2. Deposit 0
+
+Expected Result:
+- balance unchanged
+- no transaction added
+- error message displayed
+
+
+
+----------------------------------------
+TEST: Deposit Negative Number
+----------------------------------------
+
+Purpose:
+Ensure negative deposit is rejected.
+
+Steps:
+1. Create account
+2. Deposit -50
+
+Expected Result:
+- balance unchanged
+- no transaction added
+- error message displayed
+
+
+
+----------------------------------------
+TEST: Withdraw Valid Amount
+----------------------------------------
+
+Purpose:
+Ensure withdrawal reduces balance.
+
+Steps:
+1. Create account
+2. Deposit 200
+3. Withdraw 50
+
+Expected Result:
+- balance = 150
+- withdrawal transaction added
+
+
+
+----------------------------------------
+TEST: Withdraw Exact Balance
+----------------------------------------
+
+Purpose:
+Ensure full balance withdrawal is allowed.
+
+Steps:
+1. Deposit 100
+2. Withdraw 100
+
+Expected Result:
+- balance = 0
+- withdrawal successful
+
+
+
+----------------------------------------
+TEST: Withdraw More Than Balance
+----------------------------------------
+
+Purpose:
+Ensure overdrawing is prevented.
+
+Steps:
+1. Deposit 50
+2. Withdraw 100
+
+Expected Result:
+- withdrawal rejected
+- balance unchanged
+- no withdrawal transaction added
+
+
+
+----------------------------------------
+TEST: Withdraw Zero
+----------------------------------------
+
+Purpose:
+Ensure zero withdrawal is rejected.
+
+Steps:
+1. Withdraw 0
+
+Expected Result:
+- balance unchanged
+- error message displayed
+
+
+
+----------------------------------------
+TEST: Withdraw Negative Amount
+----------------------------------------
+
+Purpose:
+Ensure negative withdrawal is rejected.
+
+Steps:
+1. Withdraw -20
+
+Expected Result:
+- balance unchanged
+- error message displayed
+
+
+
+----------------------------------------
+TEST: Show Balance
+----------------------------------------
+
+Purpose:
+Ensure correct balance displayed.
+
+Steps:
+1. Deposit 300
+2. Withdraw 50
+3. Show balance
+
+Expected Result:
+- displayed balance = 250
+
+
+
+----------------------------------------
+TEST: Show Transactions With Records
+----------------------------------------
+
+Purpose:
+Ensure transactions are displayed correctly.
+
+Steps:
+1. Deposit 100
+2. Withdraw 40
+3. Show transaction history
+
+Expected Result:
+- two transactions displayed
+- each contains:
+    - type
+    - amount
+    - balance
+    - timestamp
+
+
+
+----------------------------------------
+TEST: Show Transactions Empty
+----------------------------------------
+
+Purpose:
+Ensure empty history handled correctly.
+
+Steps:
+1. Create account
+2. Show transactions
+
+Expected Result:
+- message:
+  "No transactions found"
+
+
+
+====================================================
+CLASS: Bank
+====================================================
+
+----------------------------------------
+TEST: Create New Account
+----------------------------------------
+
+Purpose:
+Ensure account creation works.
+
+Steps:
+1. Create account with unique username
+
+Expected Result:
+- account stored in accounts collection
+- success message displayed
+
+
+
+----------------------------------------
+TEST: Create Duplicate Username
+----------------------------------------
+
+Purpose:
+Ensure duplicate usernames are rejected.
+
+Steps:
+1. Create account "John"
+2. Attempt second account "John"
+
+Expected Result:
+- second account not created
+- error message displayed
+
+
+
+----------------------------------------
+TEST: Login With Correct Details
+----------------------------------------
+
+Purpose:
+Ensure valid login succeeds.
+
+Steps:
+1. Create account
+2. Login using correct username/password
+
+Expected Result:
+- account object returned
+- login successful message
+
+
+
+----------------------------------------
+TEST: Login With Incorrect Username
+----------------------------------------
+
+Purpose:
+Ensure invalid username rejected.
+
+Steps:
+1. Attempt login with unknown username
+
+Expected Result:
+- login fails
+- null returned
+- error message displayed
+
+
+
+----------------------------------------
+TEST: Login With Incorrect Password
+----------------------------------------
+
+Purpose:
+Ensure invalid password rejected.
+
+Steps:
+1. Create account
+2. Attempt login with wrong password
+
+Expected Result:
+- login fails
+- null returned
+- error message displayed
+
+
+
+====================================================
+FUNCTION: LoggedInMenu
+====================================================
+
+----------------------------------------
+TEST: Select Withdraw Option
+----------------------------------------
+
+Purpose:
+Ensure withdraw menu option calls Withdraw method.
+
+Expected Result:
+- withdrawal process executed correctly
+
+
+
+----------------------------------------
+TEST: Select Deposit Option
+----------------------------------------
+
+Purpose:
+Ensure deposit menu option calls Deposit method.
+
+Expected Result:
+- deposit process executed correctly
+
+
+
+----------------------------------------
+TEST: Select Balance Option
+----------------------------------------
+
+Purpose:
+Ensure balance menu option displays balance.
+
+Expected Result:
+- current balance displayed
+
+
+
+----------------------------------------
+TEST: Select Transaction History Option
+----------------------------------------
+
+Purpose:
+Ensure history option displays transactions.
+
+Expected Result:
+- transaction list displayed
+
+
+
+----------------------------------------
+TEST: Logout Option
+----------------------------------------
+
+Purpose:
+Ensure logout exits account menu.
+
+Expected Result:
+- returned to main menu
+
+
+
+----------------------------------------
+TEST: Invalid Menu Option
+----------------------------------------
+
+Purpose:
+Ensure invalid choices handled correctly.
+
+Steps:
+1. Enter invalid option
+
+Expected Result:
+- error message displayed
+- menu shown again
+
+
+
+====================================================
+FUNCTION: Main
+====================================================
+
+----------------------------------------
+TEST: Main Menu Create Account
+----------------------------------------
+
+Purpose:
+Ensure option 1 calls CreateAccount.
+
+Expected Result:
+- account creation flow starts
+
+
+
+----------------------------------------
+TEST: Main Menu Login
+----------------------------------------
+
+Purpose:
+Ensure option 2 calls Login.
+
+Expected Result:
+- login flow starts
+
+
+
+----------------------------------------
+TEST: Main Menu Exit
+----------------------------------------
+
+Purpose:
+Ensure option 3 closes program.
+
+Expected Result:
+- program terminates
+
+
+
+----------------------------------------
+TEST: Main Menu Invalid Option
+----------------------------------------
+
+Purpose:
+Ensure invalid menu input handled correctly.
+
+Expected Result:
+- error message displayed
+- menu repeats

@@ -1,0 +1,242 @@
+CLASS Transaction
+
+    ATTRIBUTE transactionType
+    ATTRIBUTE amount
+    ATTRIBUTE balance
+    ATTRIBUTE timestamp
+
+    METHOD Constructor(type, amount, balance)
+
+        SET transactionType = type
+        SET amount = amount
+        SET balance = balance
+        SET timestamp = current date and time
+
+    END METHOD
+
+END CLASS
+
+
+
+CLASS Account
+
+    ATTRIBUTE username
+    ATTRIBUTE password
+    ATTRIBUTE balance
+    ATTRIBUTE transactions
+
+    METHOD Constructor(username, password)
+
+        SET username = username
+        SET password = password
+        SET balance = 0
+        SET transactions = empty list
+
+    END METHOD
+
+
+    METHOD Deposit(amount)
+
+        IF amount <= 0 THEN
+            DISPLAY "Invalid deposit amount"
+            RETURN
+        END IF
+
+        balance = balance + amount
+
+        CREATE new Transaction with:
+            type = "Deposit"
+            amount = amount
+            balance = balance
+
+        ADD transaction to transactions list
+
+        DISPLAY "Deposit successful"
+
+    END METHOD
+
+
+    METHOD Withdraw(amount)
+
+        IF amount <= 0 THEN
+            DISPLAY "Invalid withdrawal amount"
+            RETURN
+        END IF
+
+        IF amount > balance THEN
+            DISPLAY "Insufficient funds"
+            RETURN
+        END IF
+
+        balance = balance - amount
+
+        CREATE new Transaction with:
+            type = "Withdraw"
+            amount = amount
+            balance = balance
+
+        ADD transaction to transactions list
+
+        DISPLAY "Withdrawal successful"
+
+    END METHOD
+
+
+    METHOD ShowBalance()
+
+        DISPLAY balance
+
+    END METHOD
+
+
+    METHOD ShowTransactions()
+
+        IF transactions list is empty THEN
+            DISPLAY "No transactions found"
+        ELSE
+
+            FOR each transaction in transactions
+                DISPLAY transaction details
+            END FOR
+
+        END IF
+
+    END METHOD
+
+END CLASS
+
+
+
+CLASS Bank
+
+    ATTRIBUTE accounts
+
+    METHOD Constructor()
+
+        SET accounts = empty dictionary
+
+    END METHOD
+
+
+    METHOD CreateAccount()
+
+        INPUT username
+
+        IF username already exists in accounts THEN
+            DISPLAY "Username already exists"
+            RETURN
+        END IF
+
+        INPUT password
+
+        CREATE Account object
+
+        STORE account in accounts dictionary
+
+        DISPLAY "Account created successfully"
+
+    END METHOD
+
+
+    METHOD Login()
+
+        INPUT username
+        INPUT password
+
+        IF username exists AND password matches THEN
+            DISPLAY "Login successful"
+            RETURN account
+        ELSE
+            DISPLAY "Invalid username or password"
+            RETURN null
+        END IF
+
+    END METHOD
+
+END CLASS
+
+
+
+FUNCTION LoggedInMenu(account)
+
+    REPEAT
+
+        DISPLAY:
+            1. Withdraw
+            2. Deposit
+            3. Check balance
+            4. Transaction history
+            5. Logout
+
+        INPUT choice
+
+        CASE choice OF
+
+            1:
+                INPUT withdrawal amount
+                CALL account.Withdraw(amount)
+
+            2:
+                INPUT deposit amount
+                CALL account.Deposit(amount)
+
+            3:
+                CALL account.ShowBalance()
+
+            4:
+                CALL account.ShowTransactions()
+
+            5:
+                DISPLAY "Logging out"
+
+            OTHERWISE:
+                DISPLAY "Invalid option"
+
+        END CASE
+
+    UNTIL choice = 5
+
+END FUNCTION
+
+
+
+FUNCTION Main()
+
+    CREATE Bank object
+
+    REPEAT
+
+        DISPLAY:
+            1. Create new account
+            2. Login
+            3. Exit
+
+        INPUT choice
+
+        CASE choice OF
+
+            1:
+                CALL bank.CreateAccount()
+
+            2:
+                account = CALL bank.Login()
+
+                IF account is not null THEN
+                    CALL LoggedInMenu(account)
+                END IF
+
+            3:
+                DISPLAY "Program closed"
+
+            OTHERWISE:
+                DISPLAY "Invalid option"
+
+        END CASE
+
+    UNTIL choice = 3
+
+END FUNCTION
+
+
+
+CALL Main()
