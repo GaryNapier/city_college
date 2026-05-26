@@ -11,7 +11,6 @@ format:
     output-file: index.html
 ---
 
-
 # Problem solving
 
 # Levels of problem solving
@@ -51,7 +50,7 @@ format:
 - The determination to just get it solved, get something working, will get you through the problem
 - There's been loads and loads of times something wasn't working for me, but bloody-minded determination got me through rather than skill
 
-![](img/little_engine.png)
+![](img/little_engine.png){width=350 height=200 .absolute bottom=50 right=0}
 
 ## Tenacity/persistence
 
@@ -61,14 +60,14 @@ format:
   - (and, yes AI can probably solve it.. More later)
 - Take breaks - you'll probably solve it when you come back to it (for some reason)
 
-![](img/little_engine.png)
+![](img/little_engine.png){width=350 height=200 .absolute bottom=50 right=0}
 
 ## Tenacity/persistence
 
 - **Tips**
 - Of course, it's easier to be tenacious if you have problem-solving strategies... 
 
-![](img/little_engine.png)
+![](img/little_engine.png){width=350 height=200 .absolute bottom=50 right=0}
 
 # Breaking down the problem
 
@@ -86,14 +85,56 @@ format:
 - This part is surprisingly easy to forget
   - I always dive in and try to get the whole thing working at once
 - Also helps organise your thoughts and think in a "modular" way
+  - Useful later for programming design and OOP approaches
+  
+![](img/lego_digger_modules.jpg)
+
+## Breaking down the problem
+
+- Complex problems can only (efficiently) be built from smaller ones
+  - And you have to know how the pieces fit together 
+
+![](img/lego_digger_final.jpg)
 
 # Google searching
 
-# Creativity 
+## Google searching
 
-# Collaboration
+- Searching for solutions is effectively the way most problems are solved
+- There's too much to remember about e.g. the way Python works 
+- The search engine is effectively the manual
+- Ideas are re-hashed and synthesised into new ones
+  - Just like recipes in cookbooks - cooks take one method from here, another ingredient from there, an updated way of doing somehting from another book, all finally combined and interpreted by the individual cook. 
+  
+![](img/cook.png){width = 50%}
+
+## Google searching
+
+- Also there are too many packages out there to learn the specific ways of doing something
+- In Python:
+  - `numpy`, `matplotlib`, `pandas`, `scikitlearn`... Thousands more!
+  
+![](img/cook.png)
 
 # Steal code!
+
+## Steal code!
+
+- There's no shame in stealing chunks of code from anywhere you can find it
+  - Ok, if it's large chunks, then you probably need to at least cite something
+  
+- But like recipes, you can't really have intellectual property over code "recipes"*
+- Code is displayed publicly for you to use, so use it!
+
+*There are probably exceptions to this, so be careful!
+
+![Jimmy Conway from *Goodfellas*, who "loved to steal"](img/jimmy.png)
+
+# Creativity 
+
+
+
+# Collaboration
 
 # AI
 
