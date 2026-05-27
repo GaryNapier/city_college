@@ -46,55 +46,83 @@ format:
 
 ## Tenacity/persistence
 
+::: columns
+::: {.column width="60%"}
 - This is one of the most important qualities of a programmer/CS/coder
 - The determination to just get it solved, get something working, will get you through the problem
 - There's been loads and loads of times something wasn't working for me, but bloody-minded determination got me through rather than skill
+:::
 
-![](img/little_engine.png){width=350 height=200 .absolute bottom=50 right=0}
+::: {.column width="40%"}
+![](img/little_engine.png){fig-align="right"}
+:::
+:::
 
-## Tenacity/persistence
+## Tenacity/persistence - **Tips**
 
-- **Tips**
+::: columns
+::: {.column width="60%"}
 - Your problem almost certainly been solved before
 - That means enough searching will get you a (partial) solution
   - (and, yes AI can probably solve it.. More later)
 - Take breaks - you'll probably solve it when you come back to it (for some reason)
+:::
 
-![](img/little_engine.png){width=350 height=200 .absolute bottom=50 right=0}
+::: {.column width="40%"}
+![](img/little_engine.png){fig-align="right"}
+:::
+:::
 
-## Tenacity/persistence
+## Tenacity/persistence - **Tips**
 
-- **Tips**
+::: columns
+::: {.column width="60%"}
 - Of course, it's easier to be tenacious if you have problem-solving strategies... 
+:::
 
-![](img/little_engine.png){width=350 height=200 .absolute bottom=50 right=0}
+::: {.column width="40%"}
+![](img/little_engine.png){fig-align="right"}
+:::
+:::
 
 # Breaking down the problem
 
 ## Breaking down the problem
 
+::: columns
+::: {.column width="60%"}
 - Like we saw in the problem-solving section, the ideal solution is to convert messes to problems to puzzles
 - This is the ideal situation, and almost never the case
 - At best, we mostly get problems
 - So **you** have to impose some structure on things, which usually starts with breaking things down
+:::
 
-![](img/lego_floor.png)
+::: {.column width="40%"}
+![](img/lego_floor.png){fig-align="right"}
+:::
+:::
 
 ## Breaking down the problem
 
+::: columns
+::: {.column width="60%"}
 - This part is surprisingly easy to forget
   - I always dive in and try to get the whole thing working at once
 - Also helps organise your thoughts and think in a "modular" way
   - Useful later for programming design and OOP approaches
-  
-![](img/lego_digger_modules.jpg)
+:::
+
+::: {.column width="40%"}
+![](img/lego_digger_modules.jpg){fig-align="right"}
+:::
+:::   
 
 ## Breaking down the problem
 
 - Complex problems can only (efficiently) be built from smaller ones
   - And you have to know how the pieces fit together 
 
-![](img/lego_digger_final.jpg)
+![](img/lego_digger_final.jpg){fig-align="center"}
 
 # Google searching
 
@@ -106,7 +134,7 @@ format:
 - Ideas are re-hashed and synthesised into new ones
   - Just like recipes in cookbooks - cooks take one method from here, another ingredient from there, an updated way of doing somehting from another book, all finally combined and interpreted by the individual cook. 
   
-![](img/cook.png){width = 50%}
+![](img/cook.png){width=300 height=200 .absolute bottom=50 right=0}
 
 ## Google searching
 
@@ -114,29 +142,53 @@ format:
 - In Python:
   - `numpy`, `matplotlib`, `pandas`, `scikitlearn`... Thousands more!
   
-![](img/cook.png)
+![](img/cook.png){width=300 height=200 .absolute bottom=50 right=0}
+
+## Google searching - **Tips**
+
+- There is an art to searching, and the more CS vocab you acquire the easier it gets
+- Drop error messages directly into a search. These are often explained well or have discussions around them
+- Don't give up! Can almost guarantee the same problem is out there somewhere
+- Search the smallest level of your problem breakdowns
+  - No point in searching "how to build a 3D game in Python"
+- Best sites to look out for:
+  - Stack Overflow ![](img/stackoverflow.png){height=25 width=100}
+  - GitHub - especially "Issues" sections ![](img/github.png){height=25 width=100}
+  - Youtube videos ![](img/youtube.jpg){height=25 width=100}
+  - Documentation ![](img/book.jpg){height=25 width=25}
+  - Galleries of example code, especially for graphics [like this one for Plotly](https://plotly.com/python/){target="_blank"}
 
 # Steal code!
 
 ## Steal code!
 
+::: columns
+::: {.column width="70%"}
 - There's no shame in stealing chunks of code from anywhere you can find it
   - Ok, if it's large chunks, then you probably need to at least cite something
   
-- But like recipes, you can't really have intellectual property over code "recipes"*
+- But like recipes, you can't really have intellectual property over code "recipes"[^1]
 - Code is displayed publicly for you to use, so use it!
 
-*There are probably exceptions to this, so be careful!
+- I'm stealing code right now to make these slides from [a talk about PalmerPenguins](https://github.com/apreshill/palmerpenguins-useR-2022/blob/main/index.qmd){target="_blank"}
 
-![Jimmy Conway from *Goodfellas*, who "loved to steal"](img/jimmy.png)
+[^1]: There are probably exceptions to this, so be careful!
+:::
+
+::: {.column width="30%"}
+![Jimmy Conway from *Goodfellas*, who "loved to steal"](img/jimmy.png){fig-align="right" height=300 width=225}
+:::
+:::
 
 # Creativity 
 
-
-
 # Collaboration
 
+## Collaboration
+
 # AI
+
+- Will start charging soon - Uber model
 
 # Resources
 
