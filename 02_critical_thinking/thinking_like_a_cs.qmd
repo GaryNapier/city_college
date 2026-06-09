@@ -11,6 +11,13 @@ format:
     output-file: index.html
 ---
 
+
+## This talk is pointless (right now)
+
+- These points are drawn from experience 
+- They won't mean much until you've had similar experiences
+- But come back to the slides at the end of the year and see if they make more sense to you... 
+
 # Problem solving
 
 # Levels of problem solving
@@ -41,6 +48,33 @@ format:
 
 ## Levels of problem solving
 ![](screenshots/problem_solving_topology.png)
+
+## Problem solving - are you solving the right problem? 
+
+- In the war, they invented the "DD" tank, a floating tank to land on the beaches... 
+- Most of them sank!
+- [*Cautionary Tales: Can You Make a Sherman Tank Float?* - BBC](https://www.bbc.co.uk/sounds/play/p0np0bbc)
+
+![](img/dd_tank_in_water.jpg)
+
+## Problem solving - are you solving the right problem? 
+
+- "Why was the concept of amphibious tanks ever seriously entertained in the first place?" ...
+- "They solved a problem that didn't really exist. We'd already worked out how to bring tanks ashore."
+- "A brillant solution to the wrong problem can be worse than no solution at all" - Don Norman, *The Design of Everyday Things*
+
+- [*Cautionary Tales: Can You Make a Sherman Tank Float?* - BBC](https://www.bbc.co.uk/sounds/play/p0np0bbc)
+
+![](img/dd_tank_under_water.png)
+
+## Problem solving - are you solving the right problem? 
+
+- "Good designers never start by trying to solve the problem given to them. They take the original problem as a suggestion. And they don't try to search for a solution until they've determined the real problem"
+- (Easier said than done when you've got clients, bosses, deadlines...)
+
+- [*Cautionary Tales: Can You Make a Sherman Tank Float?* - BBC](https://www.bbc.co.uk/sounds/play/p0np0bbc)
+
+![](img/tank_landing.png)
 
 # Tenacity/persistence
 
@@ -187,6 +221,13 @@ format:
 ## Collaboration
 
 # AI
+
+- Templates
+
+- Like searches, give it the smallest unit of the problem
+
+- Get it to explain *why* things work - documentation is usually *terrible* for this
+  - Curse of knowledge
 
 - Will start charging soon - Uber model
 
