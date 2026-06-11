@@ -6,7 +6,7 @@ format:
 jupyter: python3
 ---
 
-[Link to the Quarto markdown code that generated this page](https://github.com/GaryNapier/city_college/blob/main/docs/word_processing/hello_quarto/hello_quarto.qmd){target="_blank"}
+[Link to the Quarto markdown code that generated this page](https://github.com/GaryNapier/city_college/blob/main/docs/01_word_processing/hello_quarto/hello_quarto.qmd){target="_blank"}
 
 # Header 1
 
