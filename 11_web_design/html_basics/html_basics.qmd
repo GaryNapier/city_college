@@ -1,0 +1,174 @@
+---
+title: "HTML basics"
+author: "Gary Napier gary.napier@ccn.ac.uk"
+format: html
+---
+
+<!-- https://coder-coder.com/how-to-make-simple-website-html/ -->
+
+## Learning outcomes
+
+- What is HTML?
+- Basic HTML syntax
+- Basic HTML tags
+
+## What is HTML?
+
+**HyperText Markup Language**
+
+- A way of displaying information on web pages in your browser.
+
+- Not a *programming* language, but a *markup* language. 
+
+- Programming languages use logic and control flow. 
+
+## Loading an HTML file in your browser locally
+
+1. In VSCode - Navigate to the folder where you want your new HTML file to be (**Open Folder**)
+2. **File > New File... > Text File**
+3. The file should open, now just save it as `index.html`
+4. See what the rendered HTML looks like by opening it in the browser (**Right-click > Open with.. > <browser name>**)
+  - Or in VSCode you can click "Opn in Integrated Browser" (top right)
+  
+![](img/open_in_integrated_browser.png)
+
+  - Drag the `tabs`index.htm` tab down slightly to see your HTML code and the rendered output side-by-side (difficult to get a screenshot of this!)
+
+## HTML Tags
+
+HTML is (mostly) made up of tags - bits of code wrapped around text used to "mark up", or distinguish, parts of the web page (hence hypertext *markup* language).
+
+Tell the browser to display whatever is inside the tag in a specific way.
+
+**Example:**
+
+```{html}
+
+First <b>ever</b> HTML code
+
+```
+
+"ever" is in the `<b>` tag, standing for "bold"
+
+Opening tag — `<b>`
+
+Closing tag —  `</b>`
+
+Save the HTML file and reload your browser/VSCode preview. Should look like this:
+
+`First **ever** HTML code`
+
+## Basic structure of an HTML document
+
+But for "proper" HTML on the internet, we need to add more tags to the file for everything to work properly.
+
+### Doctype and HTML tags
+
+The very first tag you need is the `DOCTYPE` tag. 
+
+Not exactly an HTML tag.. It tells the browser that you are using HTML5, ensuring the browser renders the page according to HTML5 specifications ([HTML5](https://en.wikipedia.org/wiki/HTML5)).
+
+`<!DOCTYPE html>`
+
+Doesn't require a closing tag because it's not surrounding any text, just declaring that this is HTML.
+
+Other doctypes used in the past were HTML 4 or XHTML. But now HTML 5 is the only doctype used.
+
+After the doctype, you have an `html` tag telling the browser that everything inside it is HTML:
+
+```{html}
+
+<!DOCTYPE html>
+<html>
+
+</html>
+
+```
+
+This seem redundant since we already used the `DOCTYPE` tag. But this other tag ensures that everything inside it will inherit some necessary characteristics of HTML.
+  - [S.O. - Why do we need a <html> tag if we have <!DOCTYPE html>?](https://stackoverflow.com/questions/61798106/why-do-we-need-a-html-tag-if-we-have-doctype-html)
+  - [S.O - Is it necessary to write HEAD, BODY and HTML tags?](https://stackoverflow.com/questions/5641997/is-it-necessary-to-write-head-body-and-html-tags)
+  
+## `head` and `body` sections
+
+`head` and `body` tags go inside the main HTML tag:
+
+```{html}
+
+<!DOCTYPE html>
+<html>
+   <head>
+   </head>
+   <body>
+   </body>
+</html>
+
+```
+
+### `head` tag 
+
+- Information about the page  
+- Links to CSS and JavaScript files. 
+
+### `body` tag 
+
+- Main content of the page. 
+- Everything the user sees on the page will usually be in the body tag. 
+
+So we need to move that sentence "First <b>ever</b> HTML code" into the body.
+
+```{html}
+
+<!DOCTYPE html>
+<html>
+   <head>
+   </head>
+   <body>
+    First <b>ever</b> HTML code
+   </body>
+</html>
+
+```
+
+On save and reload, everything should look exactly the same...
+
+## Basic tags
+
+There are [lots of tags](https://www.w3schools.com/tags/), so we'll just cover the basics.
+
+### `head`
+
+#### Meta-tags
+
+The first tag in your head should be this meta-tag setting the character encoding:
+
+```{html}
+
+<meta charset="utf-8">
+
+```
+
+[UTF-8](https://www.w3schools.com/charsets/ref_html_utf8.asp) is a type of Unicode (character set) encoding used in virtually all websites.
+
+The browser needs to translate our letters, numbers, and symbols into the bytes used by computers.
+
+UTF-8 encoding will store `"hello"` like this (binary): `01101000 01100101 01101100 01101100 01101111`
+
+It's like a dictionary, translating human languages into computer-speak.
+
+The next meta tag that should be on all websites is this `viewport` tag:
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
