@@ -23,3 +23,4 @@ def test_executable():
 
     out = getoutput(prg)
     assert out.strip() == 'Hello, World!'
+
