@@ -18,6 +18,12 @@ format:
 - They won't mean much until you've had similar experiences
 - But come back to the slides at the end of the year and see if they make more sense to you... 
 
+## Why study computer science? - problem solving
+
+> What is best in mathematics deserves not merely to be learnt as a task, but to be assimilated as part of daily thought, and brought again and again before the mind with ever-renewed encouragement" - Bertrand Russell (1872-1970)
+
+![Bertrand Russell, philosopher, mathematician & logician](img/russell.jpg){width="75%"}
+
 # Problem solving
 
 # Levels of problem solving
