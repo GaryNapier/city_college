@@ -60,7 +60,7 @@ format:
 
 - In the war, they invented the "DD" tank, a floating tank to land on the beaches... 
 - Disaster! (On one beach anyway)
-- [*Cautionary Tales: Can You Make a Sherman Tank Float?* - BBC](https://www.bbc.co.uk/sounds/play/p0np0bbc)
+- [*Cautionary Tales: Can You Make a Sherman Tank Float?* - BBC](https://www.bbc.co.uk/sounds/play/p0np0bbc){target="_blank"}
 
 ![](img/dd_tank_in_water.jpg)
 
@@ -70,7 +70,7 @@ format:
 - "They solved a problem that didn't really exist. We'd already worked out how to bring tanks ashore."
 - "A brillant solution to the wrong problem can be worse than no solution at all" - Don Norman, *The Design of Everyday Things*
 
-- [*Cautionary Tales: Can You Make a Sherman Tank Float?* - BBC](https://www.bbc.co.uk/sounds/play/p0np0bbc)
+- [*Cautionary Tales: Can You Make a Sherman Tank Float?* - BBC](https://www.bbc.co.uk/sounds/play/p0np0bbc){target="_blank"}
 
 ![](img/dd_tank_under_water.png)
 
@@ -79,7 +79,7 @@ format:
 - "Good designers never start by trying to solve the problem given to them. They take the original problem as a suggestion. And they don't try to search for a solution until they've determined the real problem"
 - (Easier said than done when you've got clients, bosses, deadlines...)
 
-- [*Cautionary Tales: Can You Make a Sherman Tank Float?* - BBC](https://www.bbc.co.uk/sounds/play/p0np0bbc)
+- [*Cautionary Tales: Can You Make a Sherman Tank Float?* - BBC](https://www.bbc.co.uk/sounds/play/p0np0bbc){target="_blank"}
 
 ![](img/tank_landing.png)
 
@@ -228,13 +228,13 @@ format:
 - It's very unlikely you'll work totally isolated (although some do)
 - Talk through the problem, collaborate, ask for help
 - Often just articulating the problem helps to solve it
-- [Pair programming](https://en.wikipedia.org/wiki/Pair_programming)
+- [Pair programming](https://en.wikipedia.org/wiki/Pair_programming){target="_blank"}
 
 ![](img/pair_prog.jpg){width="75%" fig-align="right"}
 
 ## Collaboration
 
-- [**"Rubber duck debugging"**](https://en.wikipedia.org/wiki/Rubber_duck_debugging)
+- [**"Rubber duck debugging"**](https://en.wikipedia.org/wiki/Rubber_duck_debugging){target="_blank"}
 - There's even a way of sort of collaborating with yourself
 - Explain the problem out loud, maybe to a rubber duck...
 
@@ -283,7 +283,7 @@ format:
   - The economics will start charging soon (probably)
   - Uber model - make the price low and get people reliant on it, *then* put up the price
 
-- [Relinace on chatbots diminishes critical-thinking - MIT](https://www.theguardian.com/us-news/2026/jun/19/chatbots-critical-thinking-skills)
+- [Relinace on chatbots diminishes critical-thinking - MIT](https://www.theguardian.com/us-news/2026/jun/19/chatbots-critical-thinking-skills){target="_blank"}
 
 > "When we’re interacting with AI, we *feel* we’re becoming better at certain tasks and there’s enough research that shows we are not" Anku Rani, MIT.
 
@@ -300,7 +300,7 @@ format:
 - Excellent for:
   - Debugging (especially Git/Github) ![](img/git.png){width="5%"}
   - Generating long template code where you'd only have searched for it anyway
-    - e.g. [plotting code](https://plotly.com/python/)
+    - e.g. [plotting code](https://plotly.com/python/){target="_blank"}
   - Breaking through difficult problems (if used correctly!)
   - Learning Spanish ![](img/flag.png){width="7%"}
   
@@ -316,7 +316,7 @@ Test, test, test!
 - At the same time, get it to produce results that are *general*, that you can then adapt for your specific problem. 
 - Get it to explain *why* things work 
   - documentation for most programs is usually *terrible*, so take advantage of a good explanation. 
-    - ["Curse of knowledge"](https://en.wikipedia.org/wiki/Curse_of_knowledge)
+    - ["Curse of knowledge"](https://en.wikipedia.org/wiki/Curse_of_knowledge){target="_blank"}
 
 ## AI
 
@@ -330,17 +330,17 @@ Test, test, test!
 
 ## Resources
 
-[How to think like a computer scientist](https://www.youtube.com/watch?v=sVUda0o98GQ) short video
+[How to think like a computer scientist](https://www.youtube.com/watch?v=sVUda0o98GQ){target="_blank"} short video
 
-[How to think like a Computer Scientist](https://runestone.academy/ns/books/published/thinkcspy/index.html) - interactive book with Python code
+[How to think like a Computer Scientist](https://runestone.academy/ns/books/published/thinkcspy/index.html){target="_blank"} - interactive book with Python code
 
-The Strategy Unit, Steve Wyatt - [An introduction to problem structuring](https://www.youtube.com/watch?v=-X09nvNQkYg) (~50 mins)
+The Strategy Unit, Steve Wyatt - [An introduction to problem structuring](https://www.youtube.com/watch?v=-X09nvNQkYg){target="_blank"} (~50 mins)
 
-[Elements and Principles of Data Analysis](https://www.researchgate.net/publication/331888135_Elements_and_Principles_of_Data_Analysis)
+[Elements and Principles of Data Analysis](https://www.researchgate.net/publication/331888135_Elements_and_Principles_of_Data_Analysis){target="_blank"}
 
-[The Pragmatic Programmer](https://en.wikipedia.org/wiki/The_Pragmatic_Programmer)
+[The Pragmatic Programmer](https://en.wikipedia.org/wiki/The_Pragmatic_Programmer){target="_blank"}
 
-[Eight books on general programming principles](https://www.bgosoftware.com/blog/8-most-influential-books-on-programming-and-computer-science-of-all-time/)
+[Eight books on general programming principles](https://www.bgosoftware.com/blog/8-most-influential-books-on-programming-and-computer-science-of-all-time/){target="_blank"}
 
 
 

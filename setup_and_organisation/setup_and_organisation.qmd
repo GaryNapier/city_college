@@ -294,7 +294,7 @@ project_2.doc
 
 [Bioinformatics Data Skills](https://womengovtcollegevisakha.ac.in/departments/Bioinformatics%20Data%20Skills%20Reproducible%20and%20Robust%20Research%20with%20Open%20Source%20Tools%20by%20Vince%20Buffalo.pdf){target="_blank"}
 
-[Happy Git with R](https://happygitwithr.com/)
+[Happy Git with R](https://happygitwithr.com/){target="_blank"}
 
 
 
