@@ -3,6 +3,7 @@ title: "Thinking like a computer scientist"
 author: "Gary Napier gary.napier@ccn.ac.uk"
 format:
   revealjs:
+    slide-number: true
     smaller: true
     logo: ../quarto/img/ccn_logo.png
     css: ../quarto/css/slides_styles.css
@@ -12,7 +13,7 @@ format:
 ---
 
 
-## This talk is pointless (right now)
+## This talk is pointless! (right now)
 
 - These points are drawn from experience 
 - They won't mean much until you've had similar experiences
@@ -22,7 +23,7 @@ format:
 
 > What is best in mathematics deserves not merely to be learnt as a task, but to be assimilated as part of daily thought, and brought again and again before the mind with ever-renewed encouragement" - Bertrand Russell (1872-1970)
 
-![Bertrand Russell, philosopher, mathematician & logician](img/russell.jpg){width="75%"}
+![Russell - Contributed to CS before computers were invented](img/russell.jpg){width="75%"}
 
 # Problem solving
 
@@ -58,7 +59,7 @@ format:
 ## Problem solving - are you solving the right problem? 
 
 - In the war, they invented the "DD" tank, a floating tank to land on the beaches... 
-- Most of them sank!
+- Disaster! (On one beach anyway)
 - [*Cautionary Tales: Can You Make a Sherman Tank Float?* - BBC](https://www.bbc.co.uk/sounds/play/p0np0bbc)
 
 ![](img/dd_tank_in_water.jpg)
@@ -220,24 +221,114 @@ format:
 :::
 :::
 
-# Creativity 
-
 # Collaboration
 
 ## Collaboration
 
+- It's very unlikely you'll work totally isolated (although some do)
+- Talk through the problem, collaborate, ask for help
+- Often just articulating the problem helps to solve it
+- [Pair programming](https://en.wikipedia.org/wiki/Pair_programming)
+
+![](img/pair_prog.jpg){width="75%" fig-align="right"}
+
+## Collaboration
+
+- [**"Rubber duck debugging"**](https://en.wikipedia.org/wiki/Rubber_duck_debugging)
+- There's even a way of sort of collaborating with yourself
+- Explain the problem out loud, maybe to a rubber duck...
+
+![](img/duck.jpg){width="60%" fig-align="right"}
+
+## Collaboration
+
+- Don't forget, you're creating things for other humans, not just the computer..
+
+![](img/ableson.jpg){width="75%" fig-align="right"}
+
+- So that means lots of comments, documentation and clear variables/function names!
+
+# Creativity
+
+## Creativity
+
+![](img/knuth.jpg)
+
+- Have some fun, and mess about!
+
 # AI
 
-- Templates
+## AI
 
-- Like searches, give it the smallest unit of the problem
+::: columns
+::: {.column width="60%"}
+- AI for CS/coding/problem solving isn't wholly good or bad. 
 
-- Get it to explain *why* things work - documentation is usually *terrible* for this
-  - Curse of knowledge
+- It's a tool like anything else, so has to be used in the right way. 
+<br><br><br><br>
+:::
 
-- Will start charging soon - Uber model
+::: {.column width="40%"}
+![](img/toolbox.jpg){width="75%" fig-align="right"}
+:::
+:::
 
-# Resources
+## AI
+
+![](img/brain.png){width="20%" .absolute top=50 right=50}
+
+- Don't give your brain over to AI (too much). 
+
+- Once you've given it to AI it'll cost you to get it back. 💰💰💰
+  - The economics will start charging soon (probably)
+  - Uber model - make the price low and get people reliant on it, *then* put up the price
+
+- [Relinace on chatbots diminishes critical-thinking - MIT](https://www.theguardian.com/us-news/2026/jun/19/chatbots-critical-thinking-skills)
+
+> "When we’re interacting with AI, we *feel* we’re becoming better at certain tasks and there’s enough research that shows we are not" Anku Rani, MIT.
+
+## AI
+
+- Use it as a time-saver *after* developing understanding.
+
+- If something would take ten Google searches where the discussion boards are full of contradictions.. Use it!
+
+![](img/confused.jpg)
+
+## AI
+
+- Excellent for:
+  - Debugging (especially Git/Github) ![](img/git.png){width="5%"}
+  - Generating long template code where you'd only have searched for it anyway
+    - e.g. [plotting code](https://plotly.com/python/)
+  - Breaking through difficult problems (if used correctly!)
+  - Learning Spanish ![](img/flag.png){width="7%"}
+  
+Test, test, test!
+- Don't assume it's given you the right answer.
+
+## AI
+
+- There's a skill to using it...
+- Give it very small problems and build up complexity (like the Lego model).
+- Give it very specific instructions, with examples, like you're explaining to a person. 
+- Give it very small, toy data sets instead of your real data/problem. 
+- At the same time, get it to produce results that are *general*, that you can then adapt for your specific problem. 
+- Get it to explain *why* things work 
+  - documentation for most programs is usually *terrible*, so take advantage of a good explanation. 
+    - ["Curse of knowledge"](https://en.wikipedia.org/wiki/Curse_of_knowledge)
+
+## AI
+
+- *Don't* use it for basic factual information. ❌
+  - Example: Friend used it to get a table of genes associated with drug resistance, but got it wrong
+  - Why?? Just go straight to the source of research
+  - AI is built with randomness for a good reason 
+    - it is a *problem-solving* tool, *not* a source of basic information
+  
+![](img/randomness.jpg){width="25%" fig-align="right"}
+
+## Resources
 
 [How to think like a computer scientist](https://www.youtube.com/watch?v=sVUda0o98GQ) short video
 
@@ -246,4 +337,12 @@ format:
 The Strategy Unit, Steve Wyatt - [An introduction to problem structuring](https://www.youtube.com/watch?v=-X09nvNQkYg) (~50 mins)
 
 [Elements and Principles of Data Analysis](https://www.researchgate.net/publication/331888135_Elements_and_Principles_of_Data_Analysis)
+
+[The Pragmatic Programmer](https://en.wikipedia.org/wiki/The_Pragmatic_Programmer)
+
+[Eight books on general programming principles](https://www.bgosoftware.com/blog/8-most-influential-books-on-programming-and-computer-science-of-all-time/)
+
+
+
+
 
