@@ -1,4 +1,4 @@
-#!/usr/bin/env python3
+#!/usr/bin/env python
 
 """Tests for hello.py"""
 
@@ -13,9 +13,9 @@ def test_exists():
     assert os.path.isfile(prg)
 
 def test_runnable():
-    """Runs using python3"""
+    """Runs using python"""
 
-    out = getoutput(f'python3 {prg}')
+    out = getoutput(f'python {prg}')
     assert out.strip() == 'Hello, World!'
 
 def test_executable():
