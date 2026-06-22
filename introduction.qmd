@@ -6,65 +6,88 @@ editor: visual
 
 ## Introduction
 
-Hello, class!
+`Hello, class!`
+
+Gary Napier
+gary.napier@ccn.ac.uk
 
 ## Who am I?
 
-### Philosophy - Durham Univ. ![](img/durham.png){width=7%}
-  - Logic, philosophy of science, philosophy of mind
-  - "Phil. mind is quite interesting... " ->
-    <br><br>
+### Philosophy - Durham Univ. ![](img/durham.png){width="7%"}
 
-![](img/thinker.jpg){width=30% fig-align="right"}
+-   Logic, philosophy of science, philosophy of mind
+-   "Phil. mind is quite interesting... " -\> <br><br>
 
-## Who am I?
-
-#### Cognitive neuroscience - Institute of Cog. Neuroscience, UCL ![](img/ucl.png){width=10%}
-  - Computational models of schizophrenia
-  - Statistics
-  - ![](img/matlab.png){width=20%} ![](img/r-logo.png){width=10%}
-  - [Scz. paper](https://discovery.ucl.ac.uk/id/eprint/10056660/)
-  - "Need a job..." -> 
-
-![](img/brain.jpg){width=40% .absolute bottom=0 right=50}
+![](img/thinker.jpg){width="30%" fig-align="right"}
 
 ## Who am I?
 
-#### Customer data analyst - LexisNexis ![](img/lexis.png){width=20%}
-  - Predicting customer cancellations
-    - Exploratory data, prediction modelling/machine learning
-  - ![](img/sql.png){width=10%} ![](img/r-logo.png){width=10%}
-  - "Let's learn some proper science and coding..." -> 
+#### Cognitive neuroscience - Institute of Cog. Neuroscience, UCL ![](img/ucl.png){width="10%"}
+
+-   Computational models of schizophrenia
+-   Statistics
+-   ![](img/matlab.png){width="20%"} ![](img/r-logo.png){width="10%"}
+-   [Scz. paper](https://discovery.ucl.ac.uk/id/eprint/10056660/){target="_blank"}
+-   "Need a job..." -\>
+
+![](img/brain.jpg){.absolute width="40%" bottom="0" right="50"}
 
 ## Who am I?
 
-#### *Mycobacterium tuberculosis* research - LSHTM ![](img/lshtm.jpg){width=10%}
-  - Bioinformatics - using computers to learn about the genome and make inferences about biology
-  - ![](img/bash.png){width=15%} ![](img/r-logo.png){width=10%} ![](img/python.png){width=20%}
-  - other bioinformatics tools and programs
-  - [Thesis](https://researchonline.lshtm.ac.uk/id/eprint/4670881/1/2022_ITD_PhD_Napier_G-SR.pdf)
-  - "Need a job again..." -> 
+#### Customer data analyst - LexisNexis ![](img/lexis.png){width="20%"}
 
-![](img/mtb.png){width=20% .absolute bottom=0 right=50}
-![](img/mtb-tree.png){width=30% .absolute bottom=175 right=-50}
+-   Predicting customer cancellations
+    -   Exploratory data, prediction modelling/machine learning
+-   ![](img/sql.png){width="10%"} ![](img/r-logo.png){width="10%"}
+-   "Let's learn some proper science and coding..." -\>
 
 ## Who am I?
 
-#### R programmer - Aviva ![](img/aviva.png){width=10%}
-  - Developing R Shiny web apps for the actuaries
-  - ![](img/r-logo.png){width=10%} ![](img/shiny.png){width=10%} ![](img/git.png){width=10%} ![](img/bitbucket.png){width=10%}
-  - [Shiny gallery](https://shiny.posit.co/r/gallery/)
-  - "Need something in public health..." ->
+#### *Mycobacterium tuberculosis* research - LSHTM ![](img/lshtm.jpg){width="10%"}
+
+-   Bioinformatics - using computers to learn about the genome and make inferences about biology
+-   ![](img/bash.png){width="15%"} ![](img/r-logo.png){width="10%"} ![](img/python.png){width="20%"}
+-   other bioinformatics tools and programs
+-   [Thesis](https://researchonline.lshtm.ac.uk/id/eprint/4670881/1/2022_ITD_PhD_Napier_G-SR.pdf){target="_blank"}
+-   "Need a job again..." -\>
+
+![](img/mtb.png){.absolute width="20%" bottom="0" right="50"} ![](img/mtb-tree.png){.absolute width="30%" bottom="175" right="-50"}
 
 ## Who am I?
 
-#### Public health analyst - NHS ![](img/nhs.png){width=10%}
-  - Analysing public health data, making reports and forecasting for demand or to inform intervention
-  - ![](img/sql.png){width=10%} ![](img/snowflake.png){width=10%} ![](img/r-logo.png){width=10%}
-  - Geosptial data
-  - [R epidemiology handbook](https://www.epirhandbook.com/en/)
-  
-![](img/norfolk.png){width=50% .absolute bottom=0 right=50}
+#### R programmer - Aviva ![](img/aviva.png){width="10%"}
+
+-   Developing R Shiny web apps for the actuaries
+-   ![](img/r-logo.png){width="10%"} ![](img/shiny.png){width="10%"} ![](img/git.png){width="15%"} ![](img/bitbucket.png){width="20%"}
+-   [Shiny gallery](https://shiny.posit.co/r/gallery/){target="_blank"}
+-   "Need something in public health..." -\>
+
+## Who am I?
+
+#### Public health analyst - NHS ![](img/nhs.png){width="10%"}
+
+-   Analysing public health data, making reports and forecasting for demand or to inform intervention
+-   ![](img/sql.png){width="10%"} ![](img/snowflake.png){width="20%"} ![](img/r-logo.png){width="10%"}
+-   Geosptial data
+-   [R epidemiology handbook](https://www.epirhandbook.com/en/){target="_blank"}
+
+![](img/norfolk.png){width="40%" .absolute bottom="0" right="50"}
+
+## Who am I?
+
+#### Other stuff
+
+- Cooking/food (worked as a cook) 🥘
+- Guitar 🎸
+- Sea fishing 🎣
+- Cycling / bikepacking 🚴
+- Learning Spanish 🇪🇸
+- Drawing (sort of) ✏️
+
+
+
+
+
 
 
 
